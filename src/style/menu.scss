@@ -1,0 +1,58 @@
+div.menu-view {
+    white-space: nowrap;
+    user-select: none;
+
+    &>div {
+        overflow: auto;
+        display: inline-block;
+        vertical-align: top;
+        white-space: normal;
+
+        &:first-child {
+            width: 2.8rem;
+            padding: .2rem;
+
+            li {
+                padding-left: 1em;
+
+                &[active] {
+                    background-repeat: no-repeat;
+                    background-position: -4px 6px;
+                    background-size: 20px auto;
+                }
+
+                &[active="yes"] {
+                    background-image: url('./image/open.png');
+                }
+
+                &[active="no"] {
+                    background-image: url('./image/close.png');
+
+                    &>ul {
+                        display: none;
+                    }
+                }
+            }
+
+            h2 {
+                padding: 10px 0;
+                font-size: .16rem;
+            }
+
+            h3 {
+                font-weight: 400;
+                font-size: .14rem;
+                color: #304455;
+                cursor: pointer;
+                display: inline-block;
+                margin: .07rem 0;
+                height: 1.2em;
+
+                &:hover {
+                    border-bottom: 2px solid #2396b9;
+                }
+            }
+
+        }
+    }
+}

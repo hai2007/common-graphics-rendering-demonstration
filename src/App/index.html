@@ -1,0 +1,31 @@
+<header>
+    <h2>
+        常见图形绘制演示
+    </h2>
+    <search></search>
+</header>
+<div class="content">
+    <div class="menu-view">
+        <div>
+            <h2>目录</h2>
+            <ul>
+                <li ui-bind:active='pageName=="pie"?"yes":"no"'>
+                    <h3 tag='pie' ui-on:click='openPage'>饼图</h3>
+                    <ul>
+                        <li>
+                            <h3 tag='single' ui-on:click='doScroll'>单一的情况</h3>
+                        </li>
+                        <li>
+                            <h3 tag='line' ui-on:click='doScroll'>带提示折线文字</h3>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <a href="https://github.com/hai2007/common-graphics-rendering-demonstration" target="_blank">Fork Me On
+                Github</a>
+        </div>
+    </div>
+    <div class="content">
+        <div ui-lazy='currentPage' id='root-view'></div>
+    </div>
+</div>

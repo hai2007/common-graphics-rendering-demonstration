@@ -1,0 +1,80 @@
+header {
+    background-color: #ffffff;
+    padding: 10px;
+    color: #e91e63;
+    height: 50px;
+    box-shadow: rgb(213, 221, 225) 0px 4px 6px;
+    background-image: url(./logo.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    padding-left: 70px;
+    background-position: 10px center;
+    position: fixed;
+    width: 100vw;
+    top: 0px;
+    left: 0;
+
+    &>h2 {
+        line-height: 30px;
+        display: inline-block;
+        font-size: 24px;
+
+        &>span {
+            font-size: 12px;
+            padding-left: 50px;
+            color: #000000;
+            font-weight: 200;
+
+            &>a {
+                text-decoration: underline;
+                color: #ff3100;
+            }
+        }
+    }
+}
+
+.content {
+    white-space: nowrap;
+
+    &>div {
+        display: inline-block;
+        vertical-align: top;
+        white-space: normal;
+        height: calc(100vh - 50px);
+
+        &.menu-view {
+            width: 300px;
+            height: calc(100vh - 50px);
+            position: fixed;
+            left: 0;
+            top: 50px;
+
+            &>div {
+                &>a {
+                    background-color: #e91e63;
+                    color: white;
+                    text-align: center;
+                    margin-top: .3rem;
+                    cursor: pointer;
+                    font-size: .15rem;
+                    display: block;
+                    width: 2.6rem;
+                    padding: .1rem 0;
+                }
+            }
+        }
+
+        &.content {
+            margin-left: 300px;
+            margin-top: 50px;
+            height: calc(100vh - 50px);
+
+            &>div {
+                padding: 0 50px;
+                overflow: auto;
+                width: calc(100vw - 300px);
+            }
+
+        }
+    }
+}

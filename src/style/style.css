@@ -1,0 +1,30 @@
+html {
+    font-size: 100px;
+    font-family: serif;
+}
+
+body {
+    font-size: .16rem;
+}
+
+.warn {
+    color: rgb(199, 191, 191) !important;
+    font-size: 12px !important;
+    font-weight: 800 !important;
+}
+
+h5 {
+    color: #f44336;
+    text-decoration: underline;
+}
+
+/* animation演示例子使用 */
+@keyframes move_right {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: 200px;
+    }
+}
