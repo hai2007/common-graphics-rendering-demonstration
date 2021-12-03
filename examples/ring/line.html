@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>环形图 / 带提示折线文字</title>
+    <script src="https://cdn.jsdelivr.net/npm/image2d@1"></script>
+    <style>
+        canvas {
+            width: 700px;
+            height: 700px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <canvas>非常抱歉，您的浏览器不支持canvas!</canvas>
+
+    <script>
+
+        var painter = $$('canvas').painter();
+
+        var data = [{
+            type: "苹果",
+            number: 124
+        }, {
+            type: "香蕉",
+            number: 56
+        }, {
+            type: "栗子",
+            number: 310
+        }];
+
+        // 求和
+        var sum = 0;
+        for (var i = 0; i < data.length; i++) sum += data[i].number;
+
+        // 准备好颜色
+        // https://hai2007.gitee.io/image2d/index.html#/api/tool?fixed=colors-getLoopColors
+        var colors = $$.getLoopColors(data.length);
+
+        var beginDeg = -Math.PI * 0.5, deg;
+        for (var i = 0; i < data.length; i++) {
+            deg = data[i].number / sum * Math.PI * 2;
+
+            // 配置画笔的颜色
+            // https://hai2007.gitee.io/image2d/index.html#/api/painter?fixed=config
+            painter.config('fillStyle', colors[i]);
+
+            // https://hai2007.gitee.io/image2d/index.html#/api/painter?fixed=painter-arc
+            painter.fillArc(350, 350, 100, 200, beginDeg, deg);
+
+            // https://hai2007.gitee.io/image2d/index.html#/api/calculate?fixed=dot-dldbh
+            var dot1 = $$.rotate(350, 350, beginDeg + deg * 0.5, 350 + 200, 350);
+            var dot2 = $$.rotate(350, 350, beginDeg + deg * 0.5, 350 + 200 + 10, 350);
+            var dot3 = [dot2[0] + (dot2[0] > 350 ? 10 : -10), dot2[1]];
+
+            // 折线
+            // https://hai2007.gitee.io/image2d/index.html#/api/painter?fixed=painter-path
+            painter.beginPath().moveTo(dot1[0], dot1[1]).lineTo(dot2[0], dot2[1]).lineTo(dot3[0], dot3[1]).stroke();
+
+            painter
+                .config({
+                    'textAlign': dot2[0] > 350 ? "left" : "right",
+                    'fillStyle': "black"
+                })
+
+                // 文字
+                // https://hai2007.gitee.io/image2d/index.html#/api/painter?fixed=painter-text
+                .fillText(data[i].type, dot3[0], dot3[1]);
+
+
+            beginDeg += deg;
+        }
+
+    </script>
+
+</body>
+
+</html>
