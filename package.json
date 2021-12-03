@@ -1,7 +1,7 @@
 {
   "name": "common-graphics-rendering-demonstration",
   "version": "0.1.0",
-  "description": "common-graphics-rendering-demonstration",
+  "description": "常见图形绘制演示，为了演示方便，借助image2d来辅助提供基础设施。不过，这几乎没有什么难度，对于从没有接触过的人而言，也可以很快上手。",
   "scripts": {
     "start": "npm install && npm run dev",
     "dev": "webpack-dev-server --config webpack.dev.js",
@@ -24,6 +24,7 @@
   "dependencies": {
     "@hai2007/polyfill": "^0.2.0",
     "@hai2007/style": "^0.3.0",
+    "image2d": "^1.16.1",
     "nefbl": "^0.2.6",
     "sprout-ui": "^0.2.0"
   }

@@ -29,7 +29,7 @@ export default class {
         // 地址栏信息
         let urlObj = urlFormat(window.location.href)
 
-        this.pageName = urlObj.router[0] in pages ? urlObj.router[0] : "pie"
+        this.pageName = urlObj.router[0] in pages ? urlObj.router[0] : "begin"
         this.loadPage(urlObj.params.fixed)
 
     }

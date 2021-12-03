@@ -9,6 +9,20 @@
         <div>
             <h2>目录</h2>
             <ul>
+                <li ui-bind:active='pageName=="begin"?"yes":"no"'>
+                    <h3 tag='begin' ui-on:click='openPage'>写在前面</h3>
+                    <ul>
+                        <li>
+                            <h3 tag='painter' ui-on:click='doScroll'>引入并获取画笔</h3>
+                        </li>
+                        <li>
+                            <h3 tag='method' ui-on:click='doScroll'>绘制方法</h3>
+                        </li>
+                        <li>
+                            <h3 tag='calc' ui-on:click='doScroll'>计算方法</h3>
+                        </li>
+                    </ul>
+                </li>
                 <li ui-bind:active='pageName=="pie"?"yes":"no"'>
                     <h3 tag='pie' ui-on:click='openPage'>饼图</h3>
                     <ul>
