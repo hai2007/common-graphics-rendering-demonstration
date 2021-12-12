@@ -3,29 +3,17 @@
   "version": "0.1.0",
   "description": "常见图形绘制演示，为了演示方便，借助image2d来辅助提供基础设施。不过，这几乎没有什么难度，对于从没有接触过的人而言，也可以很快上手。",
   "scripts": {
-    "start": "npm install && npm run dev",
-    "dev": "webpack-dev-server --config webpack.dev.js",
-    "build": "nodejs -d build && webpack --config webpack.prod.js"
+    "build": "pack_pkg --config pack.prod.js",
+    "dev": "pack_dev --config pack.dev.js"
   },
   "devDependencies": {
-    "@babel/core": "^7.10.2",
-    "@babel/preset-env": "^7.10.2",
-    "@hai2007/algorithm": "^0.7.3",
-    "@hai2007/nodejs": "^2.0.1",
-    "awesome-typescript-loader": "^5.2.1",
-    "babel-loader": "^8.1.0",
-    "tslib": "^2.3.1",
-    "typescript": "^4.4.3",
-    "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10",
-    "webpack-dev-server": "^3.11.0",
-    "webpack-merge": "^4.2.2"
+    "@nefbl/pack": "^0.4.0"
   },
   "dependencies": {
     "@hai2007/polyfill": "^0.2.0",
     "@hai2007/style": "^0.3.0",
-    "image2d": "^1.16.1",
+    "image2d": "^1.16.2",
     "nefbl": "^0.2.6",
-    "sprout-ui": "^0.2.0"
+    "sprout-ui": "^0.2.1"
   }
 }

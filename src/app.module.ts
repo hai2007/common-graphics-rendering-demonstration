@@ -13,7 +13,7 @@ import uiOn from 'sprout-ui/nefbl/directive/ui-on'
 import uiLazy from 'sprout-ui/nefbl/directive/ui-lazy'
 import uiToggle from './directive/ui-toggle'
 import uiGotoExample from './directive/ui-goto-example'
-import uiCode from 'sprout-ui/nefbl/directive/ui-code'
+import uiCode from './directive/ui-code'
 
 @Module({
     declarations: [
