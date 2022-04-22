@@ -1,5 +1,5 @@
-const common = require('./pack.common.js');
-const { merge } = require('@nefbl/pack');
+const common = require('./etcpack.common.js');
+const { merge } = require('etcpack');
 
 module.exports = merge(common, {
     devServer: {
