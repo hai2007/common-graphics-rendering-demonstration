@@ -1,0 +1,100 @@
+<div class='doc-view'>
+    <h2 id='fixed-top'>
+        地图
+    </h2>
+    <p>
+        下面，是我们最终要绘制的地图截图：
+    </p>
+    <p>
+        <img src="./image/china-map.png" alt="中国地图" width='400px'>
+    </p>
+    <h3 id='fixed-data'>
+        地图数据
+    </h3>
+    <p>
+        首先，我们需要准备好地理数据，你可以
+        <a href="https://github.com/hai2007/datapool/blob/master/README.md" target="_blank" class="link">点击此处</a>
+        查看是否有你需要的，我们这里需要绘制中国地图，由此，直接点击上面的“中国”查看文档。
+    </p>
+    <p>
+        最终，通过CDN的方式引入：
+    </p>
+    <pre ui-code="html">
+        <script src="https://cdn.jsdelivr.net/npm/@datapool/china.geojson@1"></script>
+    </pre>
+    <p>
+        上述的地理数据格式大致如下：
+    </p>
+    <pre ui-code>
+var chinaGeoJSON = {
+    type: "FeatureCollection",
+    features: [{
+        type: "Feature",
+        properties: {},
+        geometry: {
+            type: "MultiPolygon",
+            coordinates:[
+                [[[117.210024, 40.082262], [117.344299, 40.13443],...]],
+                ...
+            ]
+        }
+    },...]
+};
+    </pre>
+    <h3 id='fixed-map'>
+        经纬度映射
+    </h3>
+    <p>
+        可以看出来，中国地图就是一个个省拼接的，而每个省由于可能有飞地，所以可能存在多个区域，一个单独的区域就是通过边界经纬度围绕起来的。
+    </p>
+    <p>
+        那么，绘制地图的本质就是通过连线，把每个区域的边界一点点连起来。而边界是通过经纬度标记的，为了可以绘图，我们需要对经纬度和xy坐标之间建立一个合理的映射。
+    </p>
+    <p>
+        不同的需求映射算法不一样，我们这里先不考虑这些：
+    </p>
+    <pre ui-code>
+// https://hai2007.gitee.io/image2d/index.html#/api/calculate?fixed=map-eoap
+var map = $$.map({ scale: 4 });
+    </pre>
+    <p>
+        这样，map就是一个映射函数，比如：
+    </p>
+    <pre ui-code>
+        var pointer = map(117.210024, 40.082262);
+    </pre>
+    <p>
+        返回的pointer就是一个数组，分别表示举例地图中心距离dx和dy。
+    </p>
+    <h3 id='fixed-draw'>
+        绘制
+    </h3>
+    <p>
+        绘制就很简单了，直接for循环每个省，再for循环区域即可：
+    </p>
+    <pre ui-code>
+// 迭代一个个省
+for (var i = 0; i < chinaGeoJSON.features.length; i++) {
+
+    // 每个省可能有飞地，一个闭合的就是一个区域，迭代一个个区域
+    for (var j = 0; j < chinaGeoJSON.features[i].geometry.coordinates.length; j++) {
+
+        var regionData = chinaGeoJSON.features[i].geometry.coordinates[j][0];
+
+        painter.beginPath();
+        for (var k = 0; k < regionData.length; k++) {
+            var pointer = map(regionData[k][0], regionData[k][1]);
+            painter.lineTo(size.width * 0.5 + pointer[0], size.height * 0.5 + pointer[1]);
+        }
+        painter.closePath().full();
+
+    }
+}
+    </pre>
+    <p>
+        <button ui-goto-example='map_china'>查看用例>>></button>
+    </p>
+    <p>
+        当然，地理数据还包含了每个省的名字，省会位置等，你可以根据UI等进行补充和修改。
+    </p>
+</div>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>地图 / 中国地图</title>
+    <script src="https://cdn.jsdelivr.net/npm/image2d@1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@datapool/china.geojson@1"></script>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        canvas {
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+
+    <canvas>非常抱歉，您的浏览器不支持canvas!</canvas>
+
+    <script>
+
+        var image2d = $$('canvas');
+        var painter = image2d.painter();
+
+        var size = image2d.size();
+
+        // https://hai2007.gitee.io/image2d/index.html#/api/calculate?fixed=map-eoap
+        var map = $$.map({ scale: 4 });
+
+        // https://hai2007.gitee.io/image2d/index.html#/api/tool?fixed=colors-getLoopColors
+        var colors = $$.getRandomColors(chinaGeoJSON.features.length);
+
+        // 迭代一个个省
+        for (var i = 0; i < chinaGeoJSON.features.length; i++) {
+
+            painter.config('fillStyle', colors[i]);
+
+            // 每个省可能有飞地，一个闭合的就是一个区域，迭代一个个区域
+            for (var j = 0; j < chinaGeoJSON.features[i].geometry.coordinates.length; j++) {
+
+                var regionData = chinaGeoJSON.features[i].geometry.coordinates[j][0];
+
+                painter.beginPath();
+
+                for (var k = 0; k < regionData.length; k++) {
+                    var pointer = map(regionData[k][0], regionData[k][1]);
+                    painter.lineTo(size.width * 0.5 + pointer[0], size.height * 0.5 + pointer[1]);
+                }
+
+                painter.closePath().full();
+
+            }
+        }
+
+
+    </script>
+
+</body>
+
+</html>

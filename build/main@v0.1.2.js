@@ -82,10 +82,10 @@ __etcpack__scope_args__=window.__etcpack__getBundle('19');
 var appModule =__etcpack__scope_args__.default;
  // 引入样式
 
-__etcpack__scope_args__=window.__etcpack__getBundle('46');
+__etcpack__scope_args__=window.__etcpack__getBundle('49');
 var menu =__etcpack__scope_args__.default;
 
-__etcpack__scope_args__=window.__etcpack__getBundle('47');
+__etcpack__scope_args__=window.__etcpack__getBundle('50');
 var style =__etcpack__scope_args__.default;
  // 先获取平台实例
 
@@ -2820,29 +2820,29 @@ __etcpack__scope_args__=window.__etcpack__getBundle('20');
 var AppComponent =__etcpack__scope_args__.default;
  // 组件
 
-__etcpack__scope_args__=window.__etcpack__getBundle('29');
+__etcpack__scope_args__=window.__etcpack__getBundle('30');
 var search =__etcpack__scope_args__.default;
  // 指令
 
-__etcpack__scope_args__=window.__etcpack__getBundle('33');
+__etcpack__scope_args__=window.__etcpack__getBundle('34');
 var uiBind =__etcpack__scope_args__.default;
 
-__etcpack__scope_args__=window.__etcpack__getBundle('34');
+__etcpack__scope_args__=window.__etcpack__getBundle('35');
 var uiModel =__etcpack__scope_args__.default;
 
-__etcpack__scope_args__=window.__etcpack__getBundle('36');
+__etcpack__scope_args__=window.__etcpack__getBundle('37');
 var uiOn =__etcpack__scope_args__.default;
 
-__etcpack__scope_args__=window.__etcpack__getBundle('37');
+__etcpack__scope_args__=window.__etcpack__getBundle('38');
 var uiLazy =__etcpack__scope_args__.default;
 
-__etcpack__scope_args__=window.__etcpack__getBundle('38');
+__etcpack__scope_args__=window.__etcpack__getBundle('39');
 var uiToggle =__etcpack__scope_args__.default;
 
-__etcpack__scope_args__=window.__etcpack__getBundle('39');
+__etcpack__scope_args__=window.__etcpack__getBundle('41');
 var uiGotoExample =__etcpack__scope_args__.default;
 
-__etcpack__scope_args__=window.__etcpack__getBundle('44');
+__etcpack__scope_args__=window.__etcpack__getBundle('47');
 var uiCode =__etcpack__scope_args__.default;
 
 
@@ -3161,7 +3161,7 @@ __etcpack__scope_bundle__.default= function (doback, duration, callback) {
 window.__etcpack__bundleSrc__['24']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
-    __etcpack__scope_bundle__.default= "\n header{\n\nbackground-color: #ffffff;\n\npadding: 10px;\n\ncolor: #e91e63;\n\nheight: 50px;\n\nbox-shadow: rgb(213, 221, 225) 0px 4px 6px;\n\nbackground-image: url(./logo.png);\n\nbackground-size: auto 100%;\n\nbackground-repeat: no-repeat;\n\npadding-left: 70px;\n\nbackground-position: 10px center;\n\nposition: fixed;\n\nwidth: 100vw;\n\ntop: 0px;\n\nleft: 0;\n\n}\n\n header>h2{\n\nline-height: 30px;\n\ndisplay: inline-block;\n\nfont-size: 24px;\n\n}\n\n header>h2>span{\n\nfont-size: 12px;\n\npadding-left: 50px;\n\ncolor: #000000;\n\nfont-weight: 200;\n\n}\n\n header>h2>span>a{\n\ntext-decoration: underline;\n\ncolor: #ff3100;\n\n}\n\n .content{\n\nwhite-space: nowrap;\n\n}\n\n .content>div{\n\ndisplay: inline-block;\n\nvertical-align: top;\n\nwhite-space: normal;\n\nheight: calc(100vh - 50px);\n\n}\n\n .content>div.menu-view{\n\nwidth: 300px;\n\nheight: calc(100vh - 50px);\n\nposition: fixed;\n\nleft: 0;\n\ntop: 50px;\n\n}\n\n .content>div.menu-view>div>a{\n\nbackground-color: #e91e63;\n\ncolor: white;\n\ntext-align: center;\n\nmargin-top: .3rem;\n\ncursor: pointer;\n\nfont-size: .15rem;\n\ndisplay: block;\n\nwidth: 2.6rem;\n\npadding: .1rem 0;\n\n}\n\n .content>div.content{\n\nmargin-left: 300px;\n\nmargin-top: 50px;\n\nheight: calc(100vh - 50px);\n\n}\n\n .content>div.content>div{\n\npadding: 0 50px;\n\noverflow: auto;\n\nwidth: calc(100vw - 300px);\n\n}\n"
+    __etcpack__scope_bundle__.default= "\n header{\n\nbackground-color: #ffffff;\n\npadding: 10px;\n\ncolor: #e91e63;\n\nheight: 50px;\n\nbox-shadow: rgb(213, 221, 225) 0px 4px 6px;\n\nbackground-image: url(./logo.png);\n\nbackground-size: auto 100%;\n\nbackground-repeat: no-repeat;\n\npadding-left: 70px;\n\nbackground-position: 10px center;\n\nposition: fixed;\n\nwidth: 100vw;\n\ntop: 0px;\n\nleft: 0;\n\n}\n\n header>h2{\n\nline-height: 30px;\n\ndisplay: inline-block;\n\nfont-size: 24px;\n\n}\n\n header>h2>span{\n\nfont-size: 12px;\n\npadding-left: 50px;\n\ncolor: #000000;\n\nfont-weight: 200;\n\n}\n\n header>h2>span>a{\n\ntext-decoration: underline;\n\ncolor: #ff3100;\n\n}\n\n .content{\n\nwhite-space: nowrap;\n\n}\n\n .content>div{\n\ndisplay: inline-block;\n\nvertical-align: top;\n\nwhite-space: normal;\n\nheight: calc(100vh - 50px);\n\n}\n\n .content>div.menu-view{\n\nwidth: 300px;\n\nheight: calc(100vh - 50px);\n\nposition: fixed;\n\nleft: 0;\n\ntop: 50px;\n\n}\n\n .content>div.menu-view>div>a{\n\nbackground-color: #e91e63;\n\ncolor: white;\n\ntext-align: center;\n\nmargin-top: .3rem;\n\ncursor: pointer;\n\nfont-size: .15rem;\n\ndisplay: block;\n\npadding: .1rem 0;\n\n}\n\n .content>div.content{\n\nmargin-left: 300px;\n\nmargin-top: 50px;\n\nheight: calc(100vh - 50px);\n\n}\n\n .content>div.content>div{\n\npadding: 0 50px;\n\noverflow: auto;\n\nwidth: calc(100vw - 300px);\n\n}\n"
   
     return __etcpack__scope_bundle__;
 }
@@ -3172,7 +3172,7 @@ window.__etcpack__bundleSrc__['24']=function(){
 window.__etcpack__bundleSrc__['25']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
-    __etcpack__scope_bundle__.default= "<header>\r\n    <h2>\r\n        常见图形绘制演示\r\n    </h2>\r\n    <search></search>\r\n</header>\r\n<div class=\"content\">\r\n    <div class=\"menu-view\">\r\n        <div>\r\n            <h2>目录</h2>\r\n            <ul>\r\n                <li ui-bind:active='pageName==\"begin\"?\"yes\":\"no\"'>\r\n                    <h3 tag='begin' ui-on:click='openPage'>写在前面</h3>\r\n                    <ul>\r\n                        <li>\r\n                            <h3 tag='painter' ui-on:click='doScroll'>引入并获取画笔</h3>\r\n                        </li>\r\n                        <li>\r\n                            <h3 tag='method' ui-on:click='doScroll'>绘制方法</h3>\r\n                        </li>\r\n                        <li>\r\n                            <h3 tag='calc' ui-on:click='doScroll'>计算方法</h3>\r\n                        </li>\r\n                    </ul>\r\n                </li>\r\n                <li ui-bind:active='pageName==\"ring\"?\"yes\":\"no\"'>\r\n                    <h3 tag='ring' ui-on:click='openPage'>环形图</h3>\r\n                    <ul>\r\n                        <li>\r\n                            <h3 tag='single' ui-on:click='doScroll'>单一的情况</h3>\r\n                        </li>\r\n                        <li>\r\n                            <h3 tag='line' ui-on:click='doScroll'>带提示折线文字</h3>\r\n                        </li>\r\n                    </ul>\r\n                </li>\r\n            </ul>\r\n            <a href=\"https://github.com/hai2007/common-graphics-rendering-demonstration\" target=\"_blank\">Fork Me On\r\n                Github</a>\r\n        </div>\r\n    </div>\r\n    <div class=\"content\">\r\n        <div ui-lazy='currentPage' id='root-view'></div>\r\n    </div>\r\n</div>\r\n"
+    __etcpack__scope_bundle__.default= "<header>\n    <h2>\n        常见图形绘制演示\n    </h2>\n    <search></search>\n</header>\n<div class=\"content\">\n    <div class=\"menu-view\">\n        <div>\n            <h2>目录</h2>\n            <ul>\n                <li ui-bind:active='pageName==\"begin\"?\"yes\":\"no\"'>\n                    <h3 tag='begin' ui-on:click='openPage'>写在前面</h3>\n                    <ul>\n                        <li>\n                            <h3 tag='painter' ui-on:click='doScroll'>引入并获取画笔</h3>\n                        </li>\n                        <li>\n                            <h3 tag='method' ui-on:click='doScroll'>绘制方法</h3>\n                        </li>\n                        <li>\n                            <h3 tag='calc' ui-on:click='doScroll'>计算方法</h3>\n                        </li>\n                    </ul>\n                </li>\n                <li ui-bind:active='pageName==\"ring\"?\"yes\":\"no\"'>\n                    <h3 tag='ring' ui-on:click='openPage'>环形图</h3>\n                    <ul>\n                        <li>\n                            <h3 tag='single' ui-on:click='doScroll'>单一的情况</h3>\n                        </li>\n                        <li>\n                            <h3 tag='line' ui-on:click='doScroll'>带提示折线文字</h3>\n                        </li>\n                    </ul>\n                </li>\n                <li ui-bind:active='pageName==\"map\"?\"yes\":\"no\"'>\n                    <h3 tag='map' ui-on:click='openPage'>地图</h3>\n                    <ul>\n                        <li>\n                            <h3 tag='data' ui-on:click='doScroll'>地图数据</h3>\n                        </li>\n                        <li>\n                            <h3 tag='map' ui-on:click='doScroll'>经纬度映射</h3>\n                        </li>\n                        <li>\n                            <h3 tag='draw' ui-on:click='doScroll'>绘制</h3>\n                        </li>\n                    </ul>\n                </li>\n            </ul>\n            <a href=\"https://github.com/hai2007/common-graphics-rendering-demonstration\" target=\"_blank\">Fork Me On\n                Github</a>\n        </div>\n    </div>\n    <div class=\"content\">\n        <div ui-lazy='currentPage' id='root-view'></div>\n    </div>\n</div>\n"
   
     return __etcpack__scope_bundle__;
 }
@@ -3185,10 +3185,13 @@ window.__etcpack__bundleSrc__['26']=function(){
     var __etcpack__scope_args__;
     __etcpack__scope_bundle__.default= {
   "begin": function begin() {
-    return window.__etcpack__getLazyBundle('./build/main@v0.1.1-bundle1.js','27');
+    return window.__etcpack__getLazyBundle('./build/main@v0.1.2-bundle1.js','27');
   },
   "ring": function ring() {
-    return window.__etcpack__getLazyBundle('./build/main@v0.1.1-bundle2.js','28');
+    return window.__etcpack__getLazyBundle('./build/main@v0.1.2-bundle2.js','28');
+  },
+  "map": function map() {
+    return window.__etcpack__getLazyBundle('./build/main@v0.1.2-bundle3.js','29');
   }
 };
   
@@ -3198,7 +3201,7 @@ window.__etcpack__bundleSrc__['26']=function(){
 /*************************** [bundle] ****************************/
 // Original file:./src/component/search/index.ts
 /*****************************************************************/
-window.__etcpack__bundleSrc__['29']=function(){
+window.__etcpack__bundleSrc__['30']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
     var _dec, _class2;
@@ -3215,13 +3218,13 @@ __etcpack__scope_args__=window.__etcpack__getBundle('1');
 var Component=__etcpack__scope_args__.Component;
 var ref=__etcpack__scope_args__.ref;
 
-__etcpack__scope_args__=window.__etcpack__getBundle('30');
+__etcpack__scope_args__=window.__etcpack__getBundle('31');
 var openPage =__etcpack__scope_args__.default;
 
-__etcpack__scope_args__=window.__etcpack__getBundle('31');
+__etcpack__scope_args__=window.__etcpack__getBundle('32');
 var style =__etcpack__scope_args__.default;
 
-__etcpack__scope_args__=window.__etcpack__getBundle('32');
+__etcpack__scope_args__=window.__etcpack__getBundle('33');
 var template =__etcpack__scope_args__.default;
 
 
@@ -3262,7 +3265,7 @@ __etcpack__scope_bundle__.default=_class;
 /*************************** [bundle] ****************************/
 // Original file:./src/tool/openPage.ts
 /*****************************************************************/
-window.__etcpack__bundleSrc__['30']=function(){
+window.__etcpack__bundleSrc__['31']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
     __etcpack__scope_bundle__.default= (function (url) {
@@ -3278,7 +3281,7 @@ window.__etcpack__bundleSrc__['30']=function(){
 /*************************** [bundle] ****************************/
 // Original file:./src/component/search/index.scss
 /*****************************************************************/
-window.__etcpack__bundleSrc__['31']=function(){
+window.__etcpack__bundleSrc__['32']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
     __etcpack__scope_bundle__.default= "\n input{\n\nheight: 30px;\n\nborder: none;\n\noutline: none;\n\npadding: 0 10px;\n\npadding-right: 35px;\n\nbackground-image: url('./image/search.svg');\n\nbackground-position: center right;\n\nbackground-repeat: no-repeat;\n\nborder-radius: 3px;\n\nbackground-color: #f3f0f0;\n\nfloat: right;\n\n}\n"
@@ -3289,7 +3292,7 @@ window.__etcpack__bundleSrc__['31']=function(){
 /*************************** [bundle] ****************************/
 // Original file:./src/component/search/index.html
 /*****************************************************************/
-window.__etcpack__bundleSrc__['32']=function(){
+window.__etcpack__bundleSrc__['33']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
     __etcpack__scope_bundle__.default= "<input placeholder=\"输入内容后回车查询\" ui-on:keydown='goSearch' ui-model='wd' />\r\n"
@@ -3300,7 +3303,7 @@ window.__etcpack__bundleSrc__['32']=function(){
 /*************************** [bundle] ****************************/
 // Original file:./node_modules/sprout-ui/nefbl/directive/ui-bind.ts
 /*****************************************************************/
-window.__etcpack__bundleSrc__['33']=function(){
+window.__etcpack__bundleSrc__['34']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
     var _dec, _class2;
@@ -3362,7 +3365,7 @@ __etcpack__scope_bundle__.default=_class;
 /*************************** [bundle] ****************************/
 // Original file:./node_modules/sprout-ui/nefbl/directive/ui-model.ts
 /*****************************************************************/
-window.__etcpack__bundleSrc__['34']=function(){
+window.__etcpack__bundleSrc__['35']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
     var _dec, _class2;
@@ -3377,7 +3380,7 @@ __etcpack__scope_args__=window.__etcpack__getBundle('1');
 var Directive=__etcpack__scope_args__.Directive;
 var setValue=__etcpack__scope_args__.setValue;
 
-__etcpack__scope_args__=window.__etcpack__getBundle('35');
+__etcpack__scope_args__=window.__etcpack__getBundle('36');
 var xhtml =__etcpack__scope_args__.default;
 
 
@@ -3412,9 +3415,486 @@ __etcpack__scope_bundle__.default=_class;
 }
 
 /*************************** [bundle] ****************************/
+// Original file:./node_modules/@hai2007/browser/xhtml.js
+/*****************************************************************/
+window.__etcpack__bundleSrc__['36']=function(){
+    var __etcpack__scope_bundle__={};
+    var __etcpack__scope_args__;
+    /*!
+ * 🌐 - 提供常用的DOM操作方法
+ * https://github.com/hai2007/browser.js/blob/master/xhtml.js
+ *
+ * author hai2007 < https://hai2007.gitee.io/sweethome >
+ *
+ * Copyright (c) 2021-present hai2007 走一步，再走一步。
+ * Released under the MIT license
+ */
+
+// 命名空间路径
+var namespace = {
+    svg: "http://www.w3.org/2000/svg",
+    xhtml: "http://www.w3.org/1999/xhtml",
+    xlink: "http://www.w3.org/1999/xlink",
+    xml: "http://www.w3.org/XML/1998/namespace",
+    xmlns: "http://www.w3.org/2000/xmlns/"
+};
+
+/**
+ * 结点操作补充
+ */
+
+__etcpack__scope_bundle__.default= {
+
+    // 阻止冒泡
+    "stopPropagation": function (event) {
+        event = event || window.event;
+        if (event.stopPropagation) { //这是其他非IE浏览器
+            event.stopPropagation();
+        } else {
+            event.cancelBubble = true;
+        }
+    },
+
+    // 阻止默认事件
+    "preventDefault": function (event) {
+        event = event || window.event;
+        if (event.preventDefault) {
+            event.preventDefault();
+        } else {
+            event.returnValue = false;
+        }
+    },
+
+    // 判断是否是结点
+    "isNode": function (param) {
+        return param && (param.nodeType === 1 || param.nodeType === 9 || param.nodeType === 11);
+    },
+
+    // 绑定事件
+    "bind": function (dom, eventType, callback) {
+
+        if (dom.constructor === Array || dom.constructor === NodeList || dom.constructor === HTMLCollection) {
+            for (var i = 0; i < dom.length; i++) {
+                this.bind(dom[i], eventType, callback);
+            }
+            return;
+        }
+
+        if (window.attachEvent)
+            dom.attachEvent("on" + eventType, callback);
+        else
+            dom.addEventListener(eventType, callback, false);
+    },
+    // 去掉绑定事件
+    "unbind": function (dom, eventType, handler) {
+
+        if (dom.constructor === Array || dom.constructor === NodeList || dom.constructor === HTMLCollection) {
+            for (var i = 0; i < dom.length; i++) {
+                this.unbind(dom[i], eventType, handler);
+            }
+            return;
+        }
+
+        if (window.detachEvent)
+            dom.detachEvent('on' + eventType, handler);
+        else
+            dom.removeEventListener(eventType, handler, false);
+
+    },
+
+    // 在当前上下文context上查找结点
+    // selectFun可选，返回boolean用以判断当前面对的结点是否保留
+    "find": function (context, selectFun, tagName) {
+        if (!this.isNode(context)) return [];
+        var nodes = context.getElementsByTagName(tagName || '*');
+        var result = [];
+        for (var i = 0; i < nodes.length; i++) {
+            if (this.isNode(nodes[i]) && (typeof selectFun != "function" || selectFun(nodes[i])))
+                result.push(nodes[i]);
+        }
+        return result;
+    },
+
+    // 寻找当前结点的孩子结点
+    // selectFun可选，返回boolean用以判断当前面对的结点是否保留
+    "children": function (dom, selectFun) {
+        var nodes = dom.childNodes;
+        var result = [];
+        for (var i = 0; i < nodes.length; i++) {
+            if (this.isNode(nodes[i]) && (typeof selectFun != "function" || selectFun(nodes[i])))
+                result.push(nodes[i]);
+        }
+        return result;
+    },
+
+    // 判断结点是否有指定class
+    // clazzs可以是字符串或数组字符串
+    // notStrict可选，boolean值，默认false表示结点必须包含全部class,true表示至少包含一个即可
+    "hasClass": function (dom, clazzs, notStrict) {
+        if (clazzs.constructor !== Array) clazzs = [clazzs];
+
+        var class_str = " " + (dom.getAttribute('class') || "") + " ";
+        for (var i = 0; i < clazzs.length; i++) {
+            if (class_str.indexOf(" " + clazzs[i] + " ") >= 0) {
+                if (notStrict) return true;
+            } else {
+                if (!notStrict) return false;
+            }
+        }
+        return true;
+    },
+
+    // 删除指定class
+    "removeClass": function (dom, clazz) {
+        var oldClazz = " " + (dom.getAttribute('class') || "") + " ";
+        var newClazz = oldClazz.replace(" " + clazz.trim() + " ", " ");
+        dom.setAttribute('class', newClazz.trim());
+    },
+
+    // 添加指定class
+    "addClass": function (dom, clazz) {
+        if (this.hasClass(dom, clazz)) return;
+        var oldClazz = dom.getAttribute('class') || "";
+        dom.setAttribute('class', oldClazz + " " + clazz);
+    },
+
+    // 字符串变成结点
+    // isSvg可选，boolean值，默认false表示结点是html，为true表示svg类型
+    "toNode": function (template, isSvg) {
+        var frame;
+
+        // html和svg上下文不一样
+        if (isSvg) frame = document.createElementNS(namespace.svg, 'svg');
+        else {
+
+            var frameTagName = 'div';
+
+            // 大部分的标签可以直接使用div作为容器
+            // 部分特殊的需要特殊的容器标签
+
+            if (/^<tr[> ]/.test(template)) {
+
+                frameTagName = "tbody";
+
+            } else if (/^<th[> ]/.test(template) || /^<td[> ]/.test(template)) {
+
+                frameTagName = "tr";
+
+            } else if (/^<thead[> ]/.test(template) || /^<tbody[> ]/.test(template)) {
+
+                frameTagName = "table";
+
+            }
+
+            frame = document.createElement(frameTagName);
+        }
+
+        // 低版本浏览器svg没有innerHTML，考虑是vue框架中，没有补充
+        frame.innerHTML = template;
+
+        var childNodes = frame.childNodes;
+        for (var i = 0; i < childNodes.length; i++) {
+            if (this.isNode(childNodes[i])) return childNodes[i];
+        }
+    },
+
+    // 主动触发事件
+    "trigger": function (dom, eventType) {
+
+        //创建event的对象实例。
+        if (document.createEventObject) {
+            // IE浏览器支持fireEvent方法
+            dom.fireEvent('on' + eventType, document.createEventObject());
+        }
+
+        // 其他标准浏览器使用dispatchEvent方法
+        else {
+            var _event = document.createEvent('HTMLEvents');
+            // 3个参数：事件类型，是否冒泡，是否阻止浏览器的默认行为
+            _event.initEvent(eventType, true, false);
+            dom.dispatchEvent(_event);
+        }
+
+    },
+
+    // 获取样式
+    "getStyle": function (dom, name) {
+        // 获取结点的全部样式
+        var allStyle = document.defaultView && document.defaultView.getComputedStyle ?
+            document.defaultView.getComputedStyle(dom, null) :
+            dom.currentStyle;
+
+        // 如果没有指定属性名称，返回全部样式
+        return typeof name === 'string' ?
+            allStyle.getPropertyValue(name) :
+            allStyle;
+    },
+
+    // 获取元素位置
+    "offsetPosition": function (dom) {
+        var left = 0;
+        var top = 0;
+        top = dom.offsetTop;
+        left = dom.offsetLeft;
+        dom = dom.offsetParent;
+        while (dom) {
+            top += dom.offsetTop;
+            left += dom.offsetLeft;
+            dom = dom.offsetParent;
+        }
+        return {
+            "left": left,
+            "top": top
+        };
+    },
+
+    // 获取鼠标相对元素位置
+    "mousePosition": function (dom, event) {
+        var bounding = dom.getBoundingClientRect();
+        if (!event || !event.clientX)
+            throw new Error('Event is necessary!');
+        return {
+            "x": event.clientX - bounding.left,
+            "y": event.clientY - bounding.top
+        };
+    },
+
+    // 删除结点
+    "remove": function (dom) {
+        dom.parentNode.removeChild(dom);
+    },
+
+    // 设置多个样式
+    "setStyles": function (dom, styles) {
+        for (var key in styles)
+            dom.style[key] = styles[key];
+    },
+
+    // 获取元素大小
+    "size": function (dom, type) {
+        var elemHeight, elemWidth;
+        if (type == 'content') { //内容
+            elemWidth = dom.clientWidth - ((this.getStyle(dom, 'padding-left') + "").replace('px', '')) - ((this.getStyle(dom, 'padding-right') + "").replace('px', ''));
+            elemHeight = dom.clientHeight - ((this.getStyle(dom, 'padding-top') + "").replace('px', '')) - ((this.getStyle(dom, 'padding-bottom') + "").replace('px', ''));
+        } else if (type == 'padding') { //内容+内边距
+            elemWidth = dom.clientWidth;
+            elemHeight = dom.clientHeight;
+        } else if (type == 'border') { //内容+内边距+边框
+            elemWidth = dom.offsetWidth;
+            elemHeight = dom.offsetHeight;
+        } else if (type == 'scroll') { //滚动的宽（不包括border）
+            elemWidth = dom.scrollWidth;
+            elemHeight = dom.scrollHeight;
+        } else {
+            elemWidth = dom.offsetWidth;
+            elemHeight = dom.offsetHeight;
+        }
+        return {
+            width: elemWidth,
+            height: elemHeight
+        };
+    },
+
+    // 在被选元素内部的结尾插入内容
+    "append": function (el, template) {
+        var node = this.isNode(template) ? template : this.toNode(template);
+        el.appendChild(node);
+        return node;
+    },
+
+    // 在被选元素内部的开头插入内容
+    "prepend": function (el, template) {
+        var node = this.isNode(template) ? template : this.toNode(template);
+        el.insertBefore(node, el.childNodes[0]);
+        return node;
+    },
+
+    // 在被选元素之后插入内容
+    "after": function (el, template) {
+        var node = this.isNode(template) ? template : this.toNode(template);
+        el.parentNode.insertBefore(node, el.nextSibling);
+        return node;
+    },
+
+    // 在被选元素之前插入内容
+    "before": function (el, template) {
+        var node = this.isNode(template) ? template : this.toNode(template);
+        el.parentNode.insertBefore(node, el);
+        return node;
+    }
+
+};
+
+  
+    return __etcpack__scope_bundle__;
+}
+
+/*************************** [bundle] ****************************/
+// Original file:./node_modules/sprout-ui/nefbl/directive/ui-on.ts
+/*****************************************************************/
+window.__etcpack__bundleSrc__['37']=function(){
+    var __etcpack__scope_bundle__={};
+    var __etcpack__scope_args__;
+    var _dec, _class2;
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+__etcpack__scope_args__=window.__etcpack__getBundle('1');
+var Directive=__etcpack__scope_args__.Directive;
+
+__etcpack__scope_args__=window.__etcpack__getBundle('36');
+var xhtml =__etcpack__scope_args__.default;
+
+/**
+ * [可以使用的修饰符]
+ * .prevent 阻止默认事件
+ * .stop    阻止冒泡
+ * .once    只执行一次
+ */
+
+var _class = (_dec = Directive({
+  selector: "ui-on"
+}), _dec(_class2 = /*#__PURE__*/function () {
+  function _class2() {
+    _classCallCheck(this, _class2);
+  }
+
+  _createClass(_class2, [{
+    key: "$inserted",
+    value: function $inserted(el, binding) {
+      var types = binding.type.split('.'),
+          modifier = {
+        "prevent": false,
+        "stop": false,
+        "once": false
+      },
+          callback = function callback(event) {
+        if (modifier.stop) xhtml.stopPropagation(event);
+        if (modifier.prevent) xhtml.preventDefault(event);
+        binding.value.apply(binding.target, [event]);
+
+        if (modifier.once) {
+          xhtml.unbind(el, types[0], callback);
+        }
+      };
+
+      for (var i = 1; i < types.length; i++) {
+        modifier[types[i]] = true;
+      }
+
+      xhtml.bind(el, types[0], callback);
+    }
+  }]);
+
+  return _class2;
+}()) || _class2);
+
+__etcpack__scope_bundle__.default=_class;
+  
+    return __etcpack__scope_bundle__;
+}
+
+/*************************** [bundle] ****************************/
+// Original file:./node_modules/sprout-ui/nefbl/directive/ui-lazy.ts
+/*****************************************************************/
+window.__etcpack__bundleSrc__['38']=function(){
+    var __etcpack__scope_bundle__={};
+    var __etcpack__scope_args__;
+    var _dec, _class2;
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+__etcpack__scope_args__=window.__etcpack__getBundle('1');
+var Directive=__etcpack__scope_args__.Directive;
+var mountComponent=__etcpack__scope_args__.mountComponent;
+
+
+var _class = (_dec = Directive({
+  selector: "ui-lazy"
+}), _dec(_class2 = /*#__PURE__*/function () {
+  function _class2() {
+    _classCallCheck(this, _class2);
+  }
+
+  _createClass(_class2, [{
+    key: "$update",
+    value: function $update(el, binding) {
+      if (binding.value) {
+        el.innerHTML = "";
+        mountComponent(el, binding.value, this['_module']);
+      }
+    }
+  }]);
+
+  return _class2;
+}()) || _class2);
+
+__etcpack__scope_bundle__.default=_class;
+  
+    return __etcpack__scope_bundle__;
+}
+
+/*************************** [bundle] ****************************/
+// Original file:./src/directive/ui-toggle.ts
+/*****************************************************************/
+window.__etcpack__bundleSrc__['39']=function(){
+    var __etcpack__scope_bundle__={};
+    var __etcpack__scope_args__;
+    var _dec, _class2;
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+__etcpack__scope_args__=window.__etcpack__getBundle('1');
+var Directive=__etcpack__scope_args__.Directive;
+
+__etcpack__scope_args__=window.__etcpack__getBundle('40');
+var xhtml =__etcpack__scope_args__.default;
+
+
+var _class = (_dec = Directive({
+  selector: "ui-toggle"
+}), _dec(_class2 = /*#__PURE__*/function () {
+  function _class2() {
+    _classCallCheck(this, _class2);
+  }
+
+  _createClass(_class2, [{
+    key: "$inserted",
+    value: function $inserted(el, binding) {
+      var _el = el.parentNode;
+
+      _el.setAttribute('active', 'yes');
+
+      xhtml.bind(el, 'click', function (event) {
+        _el.setAttribute('active', _el.getAttribute('active') == 'yes' ? 'no' : 'yes');
+      });
+    }
+  }]);
+
+  return _class2;
+}()) || _class2);
+
+__etcpack__scope_bundle__.default=_class;
+  
+    return __etcpack__scope_bundle__;
+}
+
+/*************************** [bundle] ****************************/
 // Original file:./node_modules/@hai2007/tool/xhtml.js
 /*****************************************************************/
-window.__etcpack__bundleSrc__['35']=function(){
+window.__etcpack__bundleSrc__['40']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
     /*!
@@ -3727,171 +4207,9 @@ __etcpack__scope_bundle__.default= {
 }
 
 /*************************** [bundle] ****************************/
-// Original file:./node_modules/sprout-ui/nefbl/directive/ui-on.ts
-/*****************************************************************/
-window.__etcpack__bundleSrc__['36']=function(){
-    var __etcpack__scope_bundle__={};
-    var __etcpack__scope_args__;
-    var _dec, _class2;
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-__etcpack__scope_args__=window.__etcpack__getBundle('1');
-var Directive=__etcpack__scope_args__.Directive;
-
-__etcpack__scope_args__=window.__etcpack__getBundle('35');
-var xhtml =__etcpack__scope_args__.default;
-
-/**
- * [可以使用的修饰符]
- * .prevent 阻止默认事件
- * .stop    阻止冒泡
- * .once    只执行一次
- */
-
-var _class = (_dec = Directive({
-  selector: "ui-on"
-}), _dec(_class2 = /*#__PURE__*/function () {
-  function _class2() {
-    _classCallCheck(this, _class2);
-  }
-
-  _createClass(_class2, [{
-    key: "$inserted",
-    value: function $inserted(el, binding) {
-      var types = binding.type.split('.'),
-          modifier = {
-        "prevent": false,
-        "stop": false,
-        "once": false
-      },
-          callback = function callback(event) {
-        if (modifier.stop) xhtml.stopPropagation(event);
-        if (modifier.prevent) xhtml.preventDefault(event);
-        binding.value.apply(binding.target, [event]);
-
-        if (modifier.once) {
-          xhtml.unbind(el, types[0], callback);
-        }
-      };
-
-      for (var i = 1; i < types.length; i++) {
-        modifier[types[i]] = true;
-      }
-
-      xhtml.bind(el, types[0], callback);
-    }
-  }]);
-
-  return _class2;
-}()) || _class2);
-
-__etcpack__scope_bundle__.default=_class;
-  
-    return __etcpack__scope_bundle__;
-}
-
-/*************************** [bundle] ****************************/
-// Original file:./node_modules/sprout-ui/nefbl/directive/ui-lazy.ts
-/*****************************************************************/
-window.__etcpack__bundleSrc__['37']=function(){
-    var __etcpack__scope_bundle__={};
-    var __etcpack__scope_args__;
-    var _dec, _class2;
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-__etcpack__scope_args__=window.__etcpack__getBundle('1');
-var Directive=__etcpack__scope_args__.Directive;
-var mountComponent=__etcpack__scope_args__.mountComponent;
-
-
-var _class = (_dec = Directive({
-  selector: "ui-lazy"
-}), _dec(_class2 = /*#__PURE__*/function () {
-  function _class2() {
-    _classCallCheck(this, _class2);
-  }
-
-  _createClass(_class2, [{
-    key: "$update",
-    value: function $update(el, binding) {
-      if (binding.value) {
-        el.innerHTML = "";
-        mountComponent(el, binding.value, this['_module']);
-      }
-    }
-  }]);
-
-  return _class2;
-}()) || _class2);
-
-__etcpack__scope_bundle__.default=_class;
-  
-    return __etcpack__scope_bundle__;
-}
-
-/*************************** [bundle] ****************************/
-// Original file:./src/directive/ui-toggle.ts
-/*****************************************************************/
-window.__etcpack__bundleSrc__['38']=function(){
-    var __etcpack__scope_bundle__={};
-    var __etcpack__scope_args__;
-    var _dec, _class2;
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-__etcpack__scope_args__=window.__etcpack__getBundle('1');
-var Directive=__etcpack__scope_args__.Directive;
-
-__etcpack__scope_args__=window.__etcpack__getBundle('35');
-var xhtml =__etcpack__scope_args__.default;
-
-
-var _class = (_dec = Directive({
-  selector: "ui-toggle"
-}), _dec(_class2 = /*#__PURE__*/function () {
-  function _class2() {
-    _classCallCheck(this, _class2);
-  }
-
-  _createClass(_class2, [{
-    key: "$inserted",
-    value: function $inserted(el, binding) {
-      var _el = el.parentNode;
-
-      _el.setAttribute('active', 'yes');
-
-      xhtml.bind(el, 'click', function (event) {
-        _el.setAttribute('active', _el.getAttribute('active') == 'yes' ? 'no' : 'yes');
-      });
-    }
-  }]);
-
-  return _class2;
-}()) || _class2);
-
-__etcpack__scope_bundle__.default=_class;
-  
-    return __etcpack__scope_bundle__;
-}
-
-/*************************** [bundle] ****************************/
 // Original file:./src/directive/ui-goto-example.ts
 /*****************************************************************/
-window.__etcpack__bundleSrc__['39']=function(){
+window.__etcpack__bundleSrc__['41']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
     var _dec, _class2;
@@ -3905,10 +4223,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 __etcpack__scope_args__=window.__etcpack__getBundle('1');
 var Directive=__etcpack__scope_args__.Directive;
 
-__etcpack__scope_args__=window.__etcpack__getBundle('35');
+__etcpack__scope_args__=window.__etcpack__getBundle('40');
 var xhtml =__etcpack__scope_args__.default;
 
-__etcpack__scope_args__=window.__etcpack__getBundle('40');
+__etcpack__scope_args__=window.__etcpack__getBundle('42');
 var examples =__etcpack__scope_args__.default;
 
 
@@ -3953,18 +4271,21 @@ __etcpack__scope_bundle__.default=_class;
 /*************************** [bundle] ****************************/
 // Original file:./examples/lazy-load.js
 /*****************************************************************/
-window.__etcpack__bundleSrc__['40']=function(){
+window.__etcpack__bundleSrc__['42']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
     __etcpack__scope_bundle__.default= {
   "begin_painter": function begin_painter() {
-    return window.__etcpack__getLazyBundle('./build/main@v0.1.1-bundle3.js','41');
+    return window.__etcpack__getLazyBundle('./build/main@v0.1.2-bundle4.js','43');
   },
   "ring_line": function ring_line() {
-    return window.__etcpack__getLazyBundle('./build/main@v0.1.1-bundle4.js','42');
+    return window.__etcpack__getLazyBundle('./build/main@v0.1.2-bundle5.js','44');
   },
   "ring_single": function ring_single() {
-    return window.__etcpack__getLazyBundle('./build/main@v0.1.1-bundle5.js','43');
+    return window.__etcpack__getLazyBundle('./build/main@v0.1.2-bundle6.js','45');
+  },
+  "map_china": function map_china() {
+    return window.__etcpack__getLazyBundle('./build/main@v0.1.2-bundle7.js','46');
   }
 };
   
@@ -3974,7 +4295,7 @@ window.__etcpack__bundleSrc__['40']=function(){
 /*************************** [bundle] ****************************/
 // Original file:./src/directive/ui-code.ts
 /*****************************************************************/
-window.__etcpack__bundleSrc__['44']=function(){
+window.__etcpack__bundleSrc__['47']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
     var _dec, _class2;
@@ -3985,10 +4306,10 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
-__etcpack__scope_args__=window.__etcpack__getBundle('35');
+__etcpack__scope_args__=window.__etcpack__getBundle('40');
 var xhtml =__etcpack__scope_args__.default;
 
-__etcpack__scope_args__=window.__etcpack__getBundle('45');
+__etcpack__scope_args__=window.__etcpack__getBundle('48');
 var OpenWebEditor =__etcpack__scope_args__.default;
 
 __etcpack__scope_args__=window.__etcpack__getBundle('1');
@@ -4087,7 +4408,7 @@ __etcpack__scope_bundle__.default=_class;
 /*************************** [bundle] ****************************/
 // Original file:./node_modules/open-web-editor/dist/open-web-editor.min.js
 /*****************************************************************/
-window.__etcpack__bundleSrc__['45']=function(){
+window.__etcpack__bundleSrc__['48']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
     
@@ -4123,7 +4444,7 @@ window.__etcpack__bundleSrc__['45']=function(){
 /*************************** [bundle] ****************************/
 // Original file:./src/style/menu.scss
 /*****************************************************************/
-window.__etcpack__bundleSrc__['46']=function(){
+window.__etcpack__bundleSrc__['49']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
     __etcpack__scope_bundle__.default= "\n div.menu-view{\n\nwhite-space: nowrap;\n\nuser-select: none;\n\n}\n\n div.menu-view>div{\n\noverflow: auto;\n\ndisplay: inline-block;\n\nvertical-align: top;\n\nwhite-space: normal;\n\n}\n\n div.menu-view>div:first-child{\n\nwidth: 2.8rem;\n\npadding: .2rem;\n\n}\n\n div.menu-view>div:first-child li{\n\npadding-left: 1em;\n\n}\n\n div.menu-view>div:first-child li[active]{\n\nbackground-repeat: no-repeat;\n\nbackground-position: -4px 6px;\n\nbackground-size: 20px auto;\n\n}\n\n div.menu-view>div:first-child li[active=\"yes\"]{\n\nbackground-image: url('./image/open.png');\n\n}\n\n div.menu-view>div:first-child li[active=\"no\"]{\n\nbackground-image: url('./image/close.png');\n\n}\n\n div.menu-view>div:first-child li[active=\"no\"]>ul{\n\ndisplay: none;\n\n}\n\n div.menu-view>div:first-child h2{\n\npadding: 10px 0;\n\nfont-size: .16rem;\n\n}\n\n div.menu-view>div:first-child h3{\n\nfont-weight: 400;\n\nfont-size: .14rem;\n\ncolor: #304455;\n\ncursor: pointer;\n\ndisplay: inline-block;\n\nmargin: .07rem 0;\n\nheight: 1.2em;\n\n}\n\n div.menu-view>div:first-child h3:hover{\n\nborder-bottom: 2px solid #2396b9;\n\n}\n"
@@ -4134,7 +4455,7 @@ window.__etcpack__bundleSrc__['46']=function(){
 /*************************** [bundle] ****************************/
 // Original file:./src/style/style.css
 /*****************************************************************/
-window.__etcpack__bundleSrc__['47']=function(){
+window.__etcpack__bundleSrc__['50']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
     __etcpack__scope_bundle__.default= "html {\r\n    font-size: 100px;\r\n    font-family: serif;\r\n}\r\n\r\nbody {\r\n    font-size: .16rem;\r\n}\r\n\r\n.warn {\r\n    color: rgb(199, 191, 191) !important;\r\n    font-size: 12px !important;\r\n    font-weight: 800 !important;\r\n}\r\n\r\nh5 {\r\n    color: #f44336;\r\n    text-decoration: underline;\r\n}\r\n\r\n/* animation演示例子使用 */\r\n@keyframes move_right {\r\n    from {\r\n        left: 0px;\r\n    }\r\n\r\n    to {\r\n        left: 200px;\r\n    }\r\n}\r\n"

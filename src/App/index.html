@@ -34,6 +34,20 @@
                         </li>
                     </ul>
                 </li>
+                <li ui-bind:active='pageName=="map"?"yes":"no"'>
+                    <h3 tag='map' ui-on:click='openPage'>地图</h3>
+                    <ul>
+                        <li>
+                            <h3 tag='data' ui-on:click='doScroll'>地图数据</h3>
+                        </li>
+                        <li>
+                            <h3 tag='map' ui-on:click='doScroll'>经纬度映射</h3>
+                        </li>
+                        <li>
+                            <h3 tag='draw' ui-on:click='doScroll'>绘制</h3>
+                        </li>
+                    </ul>
+                </li>
             </ul>
             <a href="https://github.com/hai2007/common-graphics-rendering-demonstration" target="_blank">Fork Me On
                 Github</a>

@@ -6,7 +6,11 @@
         假设我们现在有一组数据：
     </p>
     <pre ui-code>
-        var data = [{type: "苹果",number: 124}, {type: "香蕉",number: 56}, {type: "栗子",number: 310}];
+var data = [
+    {type: "苹果",number: 124},
+    {type: "香蕉",number: 56},
+    {type: "栗子",number: 310}
+];
     </pre>
     <p>
         我们希望采用环形图来显示，最终的效果如下：
@@ -29,15 +33,19 @@ for (var i = 0; i &lt; data.length; i++) sum += data[i].number;
         现在，就可以通过循环的方式一个个绘制圆环了：
     </p>
     <pre ui-code>
-var beginDeg = -Math.PI * 0.5, deg; // beginDeg表示当前绘制的环的开始弧度，我们从-0.5PI的地方开始绘制
+// beginDeg表示当前绘制的环的开始弧度，我们从-0.5PI的地方开始绘制
+var beginDeg = -Math.PI * 0.5, deg;
 
 for (var i = 0; i < data.length; i++) {
-    deg = data[i].number / sum * Math.PI * 2; //计算占比和和2PI相乘得出当前环的弧度
+
+    //计算占比和和2PI相乘得出当前环的弧度
+    deg = data[i].number / sum * Math.PI * 2;
 
     // 以(200, 200)为圆心，内外半径分别是100和200，从弧度beginDeg开始，绘制弧度deg的圆弧
     painter.fillArc(200, 200, 100, 200, beginDeg, deg);
 
-    beginDeg += deg; // 计算下一个环的开始弧度
+    // 计算下一个环的开始弧度
+    beginDeg += deg;
 }
     </pre>
     <button ui-goto-example='ring_single'>查看用例>>></button>
@@ -80,13 +88,18 @@ for (var i = 0; i &lt; data.length; i++) {
         由此得到了三个点的位置，对于折线而言，直接连接起来即可：
     </p>
     <pre ui-code>
-        painter.beginPath().moveTo(dot1[0], dot1[1]).lineTo(dot2[0], dot2[1]).lineTo(dot3[0], dot3[1]).stroke();
+painter
+    .beginPath()
+    .moveTo(dot1[0], dot1[1]).lineTo(dot2[0], dot2[1]).lineTo(dot3[0], dot3[1])
+    .stroke();
     </pre>
     <p>
         对于文字而言，直接在dot3的位置绘制即可，只不过，需要考虑到文字是左对齐还是右对齐，和第三个点的求法类似，直接看代码即可：
     </p>
     <pre ui-code>
-        painter.config('textAlign' , dot2[0]>cx ? "left" : "right").fillText(data[i].type, dot3[0], dot3[1]);
+painter
+    .config('textAlign' , dot2[0]>cx ? "left" : "right")
+    .fillText(data[i].type, dot3[0], dot3[1]);
     </pre>
     <button ui-goto-example='ring_line'>查看用例>>></button>
 </div>
