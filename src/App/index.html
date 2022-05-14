@@ -48,6 +48,25 @@
                         </li>
                     </ul>
                 </li>
+                <li ui-bind:active='pageName=="tree"?"yes":"no"'>
+                    <h3 tag='tree' ui-on:click='openPage'>树图</h3>
+                    <ul>
+                        <li>
+                            <h3 tag='layout' ui-on:click='doScroll'>布局</h3>
+                            <ul>
+                                <li>
+                                    <h3 tag='layout-data' ui-on:click='doScroll'>数据的格式</h3>
+                                </li>
+                                <li>
+                                    <h3 tag='layout-ui' ui-on:click='doScroll'>树图的“外观”</h3>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3 tag='draw' ui-on:click='doScroll'>绘制</h3>
+                        </li>
+                    </ul>
+                </li>
             </ul>
             <a href="https://github.com/hai2007/common-graphics-rendering-demonstration" target="_blank">Fork Me On
                 Github</a>

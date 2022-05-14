@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>树图 / 简单例子</title>
+    <script src="https://cdn.jsdelivr.net/npm/image2d@1"></script>
+    <style>
+        canvas {
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <canvas>非常抱歉，您的浏览器不支持canvas!</canvas>
+
+    <script>
+
+        var painter = $$('canvas').painter();
+
+        // https://hai2007.gitee.io/image2d/#/api/calculate?fixed=treeLayout
+        var treeLayout = $$.treeLayout({
+
+            // 配置数据格式
+            root: function (initTree) {
+                return initTree[0];
+            },
+            id: function (treeData) {
+                return treeData[0]
+            },
+            child: function (parentTree, initTree) {
+                var children = [];
+                if (parentTree[1]) {
+                    for (var index of parentTree[1]) {
+                        children.push(initTree[index]);
+                    }
+                }
+                return children;
+            },
+
+            // 树图类型
+            type: "LR",
+            width: 400,
+            height: 400
+        });
+
+        // 配置绘制方法
+        treeLayout.drawer(function (data) {
+
+            console.log(data)
+
+            var item, i;
+            for (i in data.node) {
+                item = data.node[i];
+
+                // 绘制结点
+                painter.config('strokeStyle', 'red').strokeCircle(item.left, item.top, 2);
+
+                // 文字
+                painter.config({
+                    'fillStyle': "rgb(46, 52, 61)",
+                    'font-size': 12
+                }).fillText(item.id, item.left + 10, item.top);
+
+                // 连线条
+                if (item.pid) {
+                    painter.config('strokeStyle', 'rgb(207, 202, 202)').moveTo(item.left, item.top).bezierCurveTo(
+                        item.left - 50, item.top,
+                        data.node[item.pid].left + 50, data.node[item.pid].top,
+                        data.node[item.pid].left, data.node[item.pid].top
+                    ).stroke();
+                }
+
+            }
+
+        });
+
+        treeLayout([
+            ["手绘", [1, 2, 3, 4]],
+            ["水粉"],
+            ["油画"],
+            ["素描", [5, 6]],
+            ["中国画"],
+            ["空间透视"],
+            ["色彩五大调"]
+        ]);
+
+    </script>
+
+</body>
+
+</html>

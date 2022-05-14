@@ -13,18 +13,9 @@ body {
     font-weight: 800 !important;
 }
 
-h5 {
-    color: #f44336;
-    text-decoration: underline;
-}
-
-/* animation演示例子使用 */
-@keyframes move_right {
-    from {
-        left: 0px;
-    }
-
-    to {
-        left: 200px;
-    }
+.doc-view>h4 {
+    color: #000000;
+    border-bottom: 1px solid gray;
+    padding: 2px 10px !important;
+    font-size: 13px !important;
 }

@@ -1,0 +1,111 @@
+<div class='doc-view'>
+    <h2 id='fixed-top'>
+        树图
+    </h2>
+    <p>
+        假设我们现在有一组数据：
+    </p>
+    <pre ui-code>
+var data = [
+    ["手绘", [1, 2, 3, 4]],
+    ["水粉"],
+    ["油画"],
+    ["素描", [5, 6]],
+    ["中国画"],
+    ["空间透视"],
+    ["色彩五大调"]
+];
+    </pre>
+    <p>
+        我们希望采用树图来显示，最终的效果如下：
+    </p>
+    <img src="./image/tree_simple.png" alt="树图" width='300px'>
+    <h3 id='fixed-layout'>
+        布局
+    </h3>
+    <p>
+        我们知道，绘制树图最麻烦的是计算出每个结点的位置，这里，我们可以直接使用
+        <a href="https://hai2007.gitee.io/image2d/#/api/calculate?fixed=treeLayout" target="_blank"
+            class="link">“树布局”</a>
+        来计算。
+    </p>
+    <p>
+        我们需要配置两类信息：数据的格式和树图的“外观”。
+    </p>
+    <h4 id='fixed-layout-data'>
+        数据的格式
+    </h4>
+    <p>
+        所谓的数据格式，也就是告诉“布局对象”数据是什么样子：
+    </p>
+    <pre ui-code>
+var treeLayout = $$.treeLayout({
+
+    // 根结点
+    root: function (initTree) {
+        return initTree[0];
+    },
+
+    // 当前结点id
+    id: function (treeData) {
+        return treeData[0]
+    },
+
+    // 当前结点的子结点
+    child: function (parentTree, initTree) {
+        var children = [];
+        if (parentTree[1]) {
+            for (var index of parentTree[1]) {
+                children.push(initTree[index]);
+            }
+        }
+        return children;
+    }
+});
+    </pre>
+    <h4 id='fixed-layout-ui'>
+        树图的“外观”
+    </h4>
+    <p>
+        外观指的是树长什么样子。比如，矩形的还是圆的？树朝着左还是右等等信息（具体的你可以
+        <a href="https://hai2007.gitee.io/image2d/#/api/calculate?fixed=treeLayout-config" target="_blank" class="link">
+            点击此处
+        </a>
+        进行查看）：
+    </p>
+    <pre ui-code>
+var treeLayout = $$.treeLayout({
+    type: "LR",
+    width: 400,
+    height: 400
+});
+    </pre>
+    <h3 id='fixed-draw'>
+        绘制
+    </h3>
+    <p>
+        上述配置完毕以后，布局就知道你最终传递的数据格式和你希望绘制的树的样子。
+    </p>
+    <p>
+        可是，如何绘制？我们还需要进行配置：
+    </p>
+    <pre ui-code>
+// 配置绘制方法
+treeLayout.drawer(function (data) {
+    // 使用painter绘制即可
+});
+    </pre>
+    <p>
+        data就包含着绘图需要的信息，比如这里的内容如下：
+    </p>
+    <img src="./image/tree-data.png" alt="树图数据格式" width='700px'>
+    <p>
+        拿“中国画”为例，可以很清楚的知道，这个结点应该在（200,311）的位置绘制。
+    </p>
+    <p>
+        如此，绘制好一个个结点，而再借助其中的“pid”字段，就可以完成父子结点的连线。
+    </p>
+    <p>
+        <button ui-goto-example='tree_simple'>查看用例>>></button>
+    </p>
+</div>

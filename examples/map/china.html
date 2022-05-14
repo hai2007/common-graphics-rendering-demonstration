@@ -9,14 +9,9 @@
     <script src="https://cdn.jsdelivr.net/npm/image2d@1"></script>
     <script src="https://cdn.jsdelivr.net/npm/@datapool/china.geojson@1"></script>
     <style>
-        body {
-            margin: 0;
-            overflow: hidden;
-        }
-
         canvas {
-            width: 100vw;
-            height: 100vh;
+            width: 400px;
+            height: 400px;
         }
     </style>
 </head>
@@ -36,7 +31,7 @@
         var map = $$.map({ scale: 4 });
 
         // https://hai2007.gitee.io/image2d/index.html#/api/tool?fixed=colors-getLoopColors
-        var colors = $$.getRandomColors(chinaGeoJSON.features.length);
+        var colors = $$.getLoopColors(chinaGeoJSON.features.length);
 
         // 迭代一个个省
         for (var i = 0; i < chinaGeoJSON.features.length; i++) {

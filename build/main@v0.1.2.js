@@ -82,10 +82,10 @@ __etcpack__scope_args__=window.__etcpack__getBundle('19');
 var appModule =__etcpack__scope_args__.default;
  // 引入样式
 
-__etcpack__scope_args__=window.__etcpack__getBundle('49');
+__etcpack__scope_args__=window.__etcpack__getBundle('51');
 var menu =__etcpack__scope_args__.default;
 
-__etcpack__scope_args__=window.__etcpack__getBundle('50');
+__etcpack__scope_args__=window.__etcpack__getBundle('52');
 var style =__etcpack__scope_args__.default;
  // 先获取平台实例
 
@@ -2820,29 +2820,29 @@ __etcpack__scope_args__=window.__etcpack__getBundle('20');
 var AppComponent =__etcpack__scope_args__.default;
  // 组件
 
-__etcpack__scope_args__=window.__etcpack__getBundle('30');
+__etcpack__scope_args__=window.__etcpack__getBundle('31');
 var search =__etcpack__scope_args__.default;
  // 指令
 
-__etcpack__scope_args__=window.__etcpack__getBundle('34');
+__etcpack__scope_args__=window.__etcpack__getBundle('35');
 var uiBind =__etcpack__scope_args__.default;
 
-__etcpack__scope_args__=window.__etcpack__getBundle('35');
+__etcpack__scope_args__=window.__etcpack__getBundle('36');
 var uiModel =__etcpack__scope_args__.default;
 
-__etcpack__scope_args__=window.__etcpack__getBundle('37');
+__etcpack__scope_args__=window.__etcpack__getBundle('38');
 var uiOn =__etcpack__scope_args__.default;
 
-__etcpack__scope_args__=window.__etcpack__getBundle('38');
+__etcpack__scope_args__=window.__etcpack__getBundle('39');
 var uiLazy =__etcpack__scope_args__.default;
 
-__etcpack__scope_args__=window.__etcpack__getBundle('39');
+__etcpack__scope_args__=window.__etcpack__getBundle('40');
 var uiToggle =__etcpack__scope_args__.default;
 
-__etcpack__scope_args__=window.__etcpack__getBundle('41');
+__etcpack__scope_args__=window.__etcpack__getBundle('42');
 var uiGotoExample =__etcpack__scope_args__.default;
 
-__etcpack__scope_args__=window.__etcpack__getBundle('47');
+__etcpack__scope_args__=window.__etcpack__getBundle('49');
 var uiCode =__etcpack__scope_args__.default;
 
 
@@ -3172,7 +3172,7 @@ window.__etcpack__bundleSrc__['24']=function(){
 window.__etcpack__bundleSrc__['25']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
-    __etcpack__scope_bundle__.default= "<header>\n    <h2>\n        常见图形绘制演示\n    </h2>\n    <search></search>\n</header>\n<div class=\"content\">\n    <div class=\"menu-view\">\n        <div>\n            <h2>目录</h2>\n            <ul>\n                <li ui-bind:active='pageName==\"begin\"?\"yes\":\"no\"'>\n                    <h3 tag='begin' ui-on:click='openPage'>写在前面</h3>\n                    <ul>\n                        <li>\n                            <h3 tag='painter' ui-on:click='doScroll'>引入并获取画笔</h3>\n                        </li>\n                        <li>\n                            <h3 tag='method' ui-on:click='doScroll'>绘制方法</h3>\n                        </li>\n                        <li>\n                            <h3 tag='calc' ui-on:click='doScroll'>计算方法</h3>\n                        </li>\n                    </ul>\n                </li>\n                <li ui-bind:active='pageName==\"ring\"?\"yes\":\"no\"'>\n                    <h3 tag='ring' ui-on:click='openPage'>环形图</h3>\n                    <ul>\n                        <li>\n                            <h3 tag='single' ui-on:click='doScroll'>单一的情况</h3>\n                        </li>\n                        <li>\n                            <h3 tag='line' ui-on:click='doScroll'>带提示折线文字</h3>\n                        </li>\n                    </ul>\n                </li>\n                <li ui-bind:active='pageName==\"map\"?\"yes\":\"no\"'>\n                    <h3 tag='map' ui-on:click='openPage'>地图</h3>\n                    <ul>\n                        <li>\n                            <h3 tag='data' ui-on:click='doScroll'>地图数据</h3>\n                        </li>\n                        <li>\n                            <h3 tag='map' ui-on:click='doScroll'>经纬度映射</h3>\n                        </li>\n                        <li>\n                            <h3 tag='draw' ui-on:click='doScroll'>绘制</h3>\n                        </li>\n                    </ul>\n                </li>\n            </ul>\n            <a href=\"https://github.com/hai2007/common-graphics-rendering-demonstration\" target=\"_blank\">Fork Me On\n                Github</a>\n        </div>\n    </div>\n    <div class=\"content\">\n        <div ui-lazy='currentPage' id='root-view'></div>\n    </div>\n</div>\n"
+    __etcpack__scope_bundle__.default= "<header>\n    <h2>\n        常见图形绘制演示\n    </h2>\n    <search></search>\n</header>\n<div class=\"content\">\n    <div class=\"menu-view\">\n        <div>\n            <h2>目录</h2>\n            <ul>\n                <li ui-bind:active='pageName==\"begin\"?\"yes\":\"no\"'>\n                    <h3 tag='begin' ui-on:click='openPage'>写在前面</h3>\n                    <ul>\n                        <li>\n                            <h3 tag='painter' ui-on:click='doScroll'>引入并获取画笔</h3>\n                        </li>\n                        <li>\n                            <h3 tag='method' ui-on:click='doScroll'>绘制方法</h3>\n                        </li>\n                        <li>\n                            <h3 tag='calc' ui-on:click='doScroll'>计算方法</h3>\n                        </li>\n                    </ul>\n                </li>\n                <li ui-bind:active='pageName==\"ring\"?\"yes\":\"no\"'>\n                    <h3 tag='ring' ui-on:click='openPage'>环形图</h3>\n                    <ul>\n                        <li>\n                            <h3 tag='single' ui-on:click='doScroll'>单一的情况</h3>\n                        </li>\n                        <li>\n                            <h3 tag='line' ui-on:click='doScroll'>带提示折线文字</h3>\n                        </li>\n                    </ul>\n                </li>\n                <li ui-bind:active='pageName==\"map\"?\"yes\":\"no\"'>\n                    <h3 tag='map' ui-on:click='openPage'>地图</h3>\n                    <ul>\n                        <li>\n                            <h3 tag='data' ui-on:click='doScroll'>地图数据</h3>\n                        </li>\n                        <li>\n                            <h3 tag='map' ui-on:click='doScroll'>经纬度映射</h3>\n                        </li>\n                        <li>\n                            <h3 tag='draw' ui-on:click='doScroll'>绘制</h3>\n                        </li>\n                    </ul>\n                </li>\n                <li ui-bind:active='pageName==\"tree\"?\"yes\":\"no\"'>\n                    <h3 tag='tree' ui-on:click='openPage'>树图</h3>\n                    <ul>\n                        <li>\n                            <h3 tag='layout' ui-on:click='doScroll'>布局</h3>\n                            <ul>\n                                <li>\n                                    <h3 tag='layout-data' ui-on:click='doScroll'>数据的格式</h3>\n                                </li>\n                                <li>\n                                    <h3 tag='layout-ui' ui-on:click='doScroll'>树图的“外观”</h3>\n                                </li>\n                            </ul>\n                        </li>\n                        <li>\n                            <h3 tag='draw' ui-on:click='doScroll'>绘制</h3>\n                        </li>\n                    </ul>\n                </li>\n            </ul>\n            <a href=\"https://github.com/hai2007/common-graphics-rendering-demonstration\" target=\"_blank\">Fork Me On\n                Github</a>\n        </div>\n    </div>\n    <div class=\"content\">\n        <div ui-lazy='currentPage' id='root-view'></div>\n    </div>\n</div>\n"
   
     return __etcpack__scope_bundle__;
 }
@@ -3192,6 +3192,9 @@ window.__etcpack__bundleSrc__['26']=function(){
   },
   "map": function map() {
     return window.__etcpack__getLazyBundle('./build/main@v0.1.2-bundle3.js','29');
+  },
+  "tree": function tree() {
+    return window.__etcpack__getLazyBundle('./build/main@v0.1.2-bundle4.js','30');
   }
 };
   
@@ -3201,7 +3204,7 @@ window.__etcpack__bundleSrc__['26']=function(){
 /*************************** [bundle] ****************************/
 // Original file:./src/component/search/index.ts
 /*****************************************************************/
-window.__etcpack__bundleSrc__['30']=function(){
+window.__etcpack__bundleSrc__['31']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
     var _dec, _class2;
@@ -3218,13 +3221,13 @@ __etcpack__scope_args__=window.__etcpack__getBundle('1');
 var Component=__etcpack__scope_args__.Component;
 var ref=__etcpack__scope_args__.ref;
 
-__etcpack__scope_args__=window.__etcpack__getBundle('31');
+__etcpack__scope_args__=window.__etcpack__getBundle('32');
 var openPage =__etcpack__scope_args__.default;
 
-__etcpack__scope_args__=window.__etcpack__getBundle('32');
+__etcpack__scope_args__=window.__etcpack__getBundle('33');
 var style =__etcpack__scope_args__.default;
 
-__etcpack__scope_args__=window.__etcpack__getBundle('33');
+__etcpack__scope_args__=window.__etcpack__getBundle('34');
 var template =__etcpack__scope_args__.default;
 
 
@@ -3265,7 +3268,7 @@ __etcpack__scope_bundle__.default=_class;
 /*************************** [bundle] ****************************/
 // Original file:./src/tool/openPage.ts
 /*****************************************************************/
-window.__etcpack__bundleSrc__['31']=function(){
+window.__etcpack__bundleSrc__['32']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
     __etcpack__scope_bundle__.default= (function (url) {
@@ -3281,7 +3284,7 @@ window.__etcpack__bundleSrc__['31']=function(){
 /*************************** [bundle] ****************************/
 // Original file:./src/component/search/index.scss
 /*****************************************************************/
-window.__etcpack__bundleSrc__['32']=function(){
+window.__etcpack__bundleSrc__['33']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
     __etcpack__scope_bundle__.default= "\n input{\n\nheight: 30px;\n\nborder: none;\n\noutline: none;\n\npadding: 0 10px;\n\npadding-right: 35px;\n\nbackground-image: url('./image/search.svg');\n\nbackground-position: center right;\n\nbackground-repeat: no-repeat;\n\nborder-radius: 3px;\n\nbackground-color: #f3f0f0;\n\nfloat: right;\n\n}\n"
@@ -3292,7 +3295,7 @@ window.__etcpack__bundleSrc__['32']=function(){
 /*************************** [bundle] ****************************/
 // Original file:./src/component/search/index.html
 /*****************************************************************/
-window.__etcpack__bundleSrc__['33']=function(){
+window.__etcpack__bundleSrc__['34']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
     __etcpack__scope_bundle__.default= "<input placeholder=\"输入内容后回车查询\" ui-on:keydown='goSearch' ui-model='wd' />\r\n"
@@ -3303,7 +3306,7 @@ window.__etcpack__bundleSrc__['33']=function(){
 /*************************** [bundle] ****************************/
 // Original file:./node_modules/sprout-ui/nefbl/directive/ui-bind.ts
 /*****************************************************************/
-window.__etcpack__bundleSrc__['34']=function(){
+window.__etcpack__bundleSrc__['35']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
     var _dec, _class2;
@@ -3365,7 +3368,7 @@ __etcpack__scope_bundle__.default=_class;
 /*************************** [bundle] ****************************/
 // Original file:./node_modules/sprout-ui/nefbl/directive/ui-model.ts
 /*****************************************************************/
-window.__etcpack__bundleSrc__['35']=function(){
+window.__etcpack__bundleSrc__['36']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
     var _dec, _class2;
@@ -3380,7 +3383,7 @@ __etcpack__scope_args__=window.__etcpack__getBundle('1');
 var Directive=__etcpack__scope_args__.Directive;
 var setValue=__etcpack__scope_args__.setValue;
 
-__etcpack__scope_args__=window.__etcpack__getBundle('36');
+__etcpack__scope_args__=window.__etcpack__getBundle('37');
 var xhtml =__etcpack__scope_args__.default;
 
 
@@ -3417,7 +3420,7 @@ __etcpack__scope_bundle__.default=_class;
 /*************************** [bundle] ****************************/
 // Original file:./node_modules/@hai2007/browser/xhtml.js
 /*****************************************************************/
-window.__etcpack__bundleSrc__['36']=function(){
+window.__etcpack__bundleSrc__['37']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
     /*!
@@ -3732,7 +3735,7 @@ __etcpack__scope_bundle__.default= {
 /*************************** [bundle] ****************************/
 // Original file:./node_modules/sprout-ui/nefbl/directive/ui-on.ts
 /*****************************************************************/
-window.__etcpack__bundleSrc__['37']=function(){
+window.__etcpack__bundleSrc__['38']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
     var _dec, _class2;
@@ -3746,7 +3749,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 __etcpack__scope_args__=window.__etcpack__getBundle('1');
 var Directive=__etcpack__scope_args__.Directive;
 
-__etcpack__scope_args__=window.__etcpack__getBundle('36');
+__etcpack__scope_args__=window.__etcpack__getBundle('37');
 var xhtml =__etcpack__scope_args__.default;
 
 /**
@@ -3801,7 +3804,7 @@ __etcpack__scope_bundle__.default=_class;
 /*************************** [bundle] ****************************/
 // Original file:./node_modules/sprout-ui/nefbl/directive/ui-lazy.ts
 /*****************************************************************/
-window.__etcpack__bundleSrc__['38']=function(){
+window.__etcpack__bundleSrc__['39']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
     var _dec, _class2;
@@ -3845,7 +3848,7 @@ __etcpack__scope_bundle__.default=_class;
 /*************************** [bundle] ****************************/
 // Original file:./src/directive/ui-toggle.ts
 /*****************************************************************/
-window.__etcpack__bundleSrc__['39']=function(){
+window.__etcpack__bundleSrc__['40']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
     var _dec, _class2;
@@ -3859,7 +3862,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 __etcpack__scope_args__=window.__etcpack__getBundle('1');
 var Directive=__etcpack__scope_args__.Directive;
 
-__etcpack__scope_args__=window.__etcpack__getBundle('40');
+__etcpack__scope_args__=window.__etcpack__getBundle('41');
 var xhtml =__etcpack__scope_args__.default;
 
 
@@ -3894,7 +3897,7 @@ __etcpack__scope_bundle__.default=_class;
 /*************************** [bundle] ****************************/
 // Original file:./node_modules/@hai2007/tool/xhtml.js
 /*****************************************************************/
-window.__etcpack__bundleSrc__['40']=function(){
+window.__etcpack__bundleSrc__['41']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
     /*!
@@ -4209,7 +4212,7 @@ __etcpack__scope_bundle__.default= {
 /*************************** [bundle] ****************************/
 // Original file:./src/directive/ui-goto-example.ts
 /*****************************************************************/
-window.__etcpack__bundleSrc__['41']=function(){
+window.__etcpack__bundleSrc__['42']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
     var _dec, _class2;
@@ -4223,10 +4226,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 __etcpack__scope_args__=window.__etcpack__getBundle('1');
 var Directive=__etcpack__scope_args__.Directive;
 
-__etcpack__scope_args__=window.__etcpack__getBundle('40');
+__etcpack__scope_args__=window.__etcpack__getBundle('41');
 var xhtml =__etcpack__scope_args__.default;
 
-__etcpack__scope_args__=window.__etcpack__getBundle('42');
+__etcpack__scope_args__=window.__etcpack__getBundle('43');
 var examples =__etcpack__scope_args__.default;
 
 
@@ -4271,21 +4274,24 @@ __etcpack__scope_bundle__.default=_class;
 /*************************** [bundle] ****************************/
 // Original file:./examples/lazy-load.js
 /*****************************************************************/
-window.__etcpack__bundleSrc__['42']=function(){
+window.__etcpack__bundleSrc__['43']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
     __etcpack__scope_bundle__.default= {
   "begin_painter": function begin_painter() {
-    return window.__etcpack__getLazyBundle('./build/main@v0.1.2-bundle4.js','43');
-  },
-  "ring_line": function ring_line() {
     return window.__etcpack__getLazyBundle('./build/main@v0.1.2-bundle5.js','44');
   },
-  "ring_single": function ring_single() {
+  "ring_line": function ring_line() {
     return window.__etcpack__getLazyBundle('./build/main@v0.1.2-bundle6.js','45');
   },
-  "map_china": function map_china() {
+  "ring_single": function ring_single() {
     return window.__etcpack__getLazyBundle('./build/main@v0.1.2-bundle7.js','46');
+  },
+  "map_china": function map_china() {
+    return window.__etcpack__getLazyBundle('./build/main@v0.1.2-bundle8.js','47');
+  },
+  "tree_simple": function tree_simple() {
+    return window.__etcpack__getLazyBundle('./build/main@v0.1.2-bundle9.js','48');
   }
 };
   
@@ -4295,7 +4301,7 @@ window.__etcpack__bundleSrc__['42']=function(){
 /*************************** [bundle] ****************************/
 // Original file:./src/directive/ui-code.ts
 /*****************************************************************/
-window.__etcpack__bundleSrc__['47']=function(){
+window.__etcpack__bundleSrc__['49']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
     var _dec, _class2;
@@ -4306,10 +4312,10 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
-__etcpack__scope_args__=window.__etcpack__getBundle('40');
+__etcpack__scope_args__=window.__etcpack__getBundle('41');
 var xhtml =__etcpack__scope_args__.default;
 
-__etcpack__scope_args__=window.__etcpack__getBundle('48');
+__etcpack__scope_args__=window.__etcpack__getBundle('50');
 var OpenWebEditor =__etcpack__scope_args__.default;
 
 __etcpack__scope_args__=window.__etcpack__getBundle('1');
@@ -4408,7 +4414,7 @@ __etcpack__scope_bundle__.default=_class;
 /*************************** [bundle] ****************************/
 // Original file:./node_modules/open-web-editor/dist/open-web-editor.min.js
 /*****************************************************************/
-window.__etcpack__bundleSrc__['48']=function(){
+window.__etcpack__bundleSrc__['50']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
     
@@ -4444,7 +4450,7 @@ window.__etcpack__bundleSrc__['48']=function(){
 /*************************** [bundle] ****************************/
 // Original file:./src/style/menu.scss
 /*****************************************************************/
-window.__etcpack__bundleSrc__['49']=function(){
+window.__etcpack__bundleSrc__['51']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
     __etcpack__scope_bundle__.default= "\n div.menu-view{\n\nwhite-space: nowrap;\n\nuser-select: none;\n\n}\n\n div.menu-view>div{\n\noverflow: auto;\n\ndisplay: inline-block;\n\nvertical-align: top;\n\nwhite-space: normal;\n\n}\n\n div.menu-view>div:first-child{\n\nwidth: 2.8rem;\n\npadding: .2rem;\n\n}\n\n div.menu-view>div:first-child li{\n\npadding-left: 1em;\n\n}\n\n div.menu-view>div:first-child li[active]{\n\nbackground-repeat: no-repeat;\n\nbackground-position: -4px 6px;\n\nbackground-size: 20px auto;\n\n}\n\n div.menu-view>div:first-child li[active=\"yes\"]{\n\nbackground-image: url('./image/open.png');\n\n}\n\n div.menu-view>div:first-child li[active=\"no\"]{\n\nbackground-image: url('./image/close.png');\n\n}\n\n div.menu-view>div:first-child li[active=\"no\"]>ul{\n\ndisplay: none;\n\n}\n\n div.menu-view>div:first-child h2{\n\npadding: 10px 0;\n\nfont-size: .16rem;\n\n}\n\n div.menu-view>div:first-child h3{\n\nfont-weight: 400;\n\nfont-size: .14rem;\n\ncolor: #304455;\n\ncursor: pointer;\n\ndisplay: inline-block;\n\nmargin: .07rem 0;\n\nheight: 1.2em;\n\n}\n\n div.menu-view>div:first-child h3:hover{\n\nborder-bottom: 2px solid #2396b9;\n\n}\n"
@@ -4455,10 +4461,10 @@ window.__etcpack__bundleSrc__['49']=function(){
 /*************************** [bundle] ****************************/
 // Original file:./src/style/style.css
 /*****************************************************************/
-window.__etcpack__bundleSrc__['50']=function(){
+window.__etcpack__bundleSrc__['52']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
-    __etcpack__scope_bundle__.default= "html {\r\n    font-size: 100px;\r\n    font-family: serif;\r\n}\r\n\r\nbody {\r\n    font-size: .16rem;\r\n}\r\n\r\n.warn {\r\n    color: rgb(199, 191, 191) !important;\r\n    font-size: 12px !important;\r\n    font-weight: 800 !important;\r\n}\r\n\r\nh5 {\r\n    color: #f44336;\r\n    text-decoration: underline;\r\n}\r\n\r\n/* animation演示例子使用 */\r\n@keyframes move_right {\r\n    from {\r\n        left: 0px;\r\n    }\r\n\r\n    to {\r\n        left: 200px;\r\n    }\r\n}\r\n"
+    __etcpack__scope_bundle__.default= "html {\n    font-size: 100px;\n    font-family: serif;\n}\n\nbody {\n    font-size: .16rem;\n}\n\n.warn {\n    color: rgb(199, 191, 191) !important;\n    font-size: 12px !important;\n    font-weight: 800 !important;\n}\n\n.doc-view>h4 {\n    color: #000000;\n    border-bottom: 1px solid gray;\n    padding: 2px 10px !important;\n    font-size: 13px !important;\n}\n"
   
     return __etcpack__scope_bundle__;
 }
