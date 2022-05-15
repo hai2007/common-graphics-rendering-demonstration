@@ -82,10 +82,10 @@ __etcpack__scope_args__=window.__etcpack__getBundle('19');
 var appModule =__etcpack__scope_args__.default;
  // 引入样式
 
-__etcpack__scope_args__=window.__etcpack__getBundle('51');
+__etcpack__scope_args__=window.__etcpack__getBundle('50');
 var menu =__etcpack__scope_args__.default;
 
-__etcpack__scope_args__=window.__etcpack__getBundle('52');
+__etcpack__scope_args__=window.__etcpack__getBundle('51');
 var style =__etcpack__scope_args__.default;
  // 先获取平台实例
 
@@ -2839,10 +2839,10 @@ var uiLazy =__etcpack__scope_args__.default;
 __etcpack__scope_args__=window.__etcpack__getBundle('40');
 var uiToggle =__etcpack__scope_args__.default;
 
-__etcpack__scope_args__=window.__etcpack__getBundle('42');
+__etcpack__scope_args__=window.__etcpack__getBundle('41');
 var uiGotoExample =__etcpack__scope_args__.default;
 
-__etcpack__scope_args__=window.__etcpack__getBundle('49');
+__etcpack__scope_args__=window.__etcpack__getBundle('48');
 var uiCode =__etcpack__scope_args__.default;
 
 
@@ -3862,7 +3862,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 __etcpack__scope_args__=window.__etcpack__getBundle('1');
 var Directive=__etcpack__scope_args__.Directive;
 
-__etcpack__scope_args__=window.__etcpack__getBundle('41');
+__etcpack__scope_args__=window.__etcpack__getBundle('37');
 var xhtml =__etcpack__scope_args__.default;
 
 
@@ -3895,324 +3895,9 @@ __etcpack__scope_bundle__.default=_class;
 }
 
 /*************************** [bundle] ****************************/
-// Original file:./node_modules/@hai2007/tool/xhtml.js
-/*****************************************************************/
-window.__etcpack__bundleSrc__['41']=function(){
-    var __etcpack__scope_bundle__={};
-    var __etcpack__scope_args__;
-    /*!
- * 💡 - 提供常用的DOM操作方法
- * https://github.com/hai2007/tool.js/blob/master/xhtml.js
- *
- * author hai2007 < https://hai2007.gitee.io/sweethome >
- *
- * Copyright (c) 2021-present hai2007 走一步，再走一步。
- * Released under the MIT license
- */
-
-// 命名空间路径
-var namespace = {
-    svg: "http://www.w3.org/2000/svg",
-    xhtml: "http://www.w3.org/1999/xhtml",
-    xlink: "http://www.w3.org/1999/xlink",
-    xml: "http://www.w3.org/XML/1998/namespace",
-    xmlns: "http://www.w3.org/2000/xmlns/"
-};
-
-/**
- * 结点操作补充
- */
-
-__etcpack__scope_bundle__.default= {
-
-    // 阻止冒泡
-    "stopPropagation": function (event) {
-        event = event || window.event;
-        if (event.stopPropagation) { //这是其他非IE浏览器
-            event.stopPropagation();
-        } else {
-            event.cancelBubble = true;
-        }
-    },
-
-    // 阻止默认事件
-    "preventDefault": function (event) {
-        event = event || window.event;
-        if (event.preventDefault) {
-            event.preventDefault();
-        } else {
-            event.returnValue = false;
-        }
-    },
-
-    // 判断是否是结点
-    "isNode": function (param) {
-        return param && (param.nodeType === 1 || param.nodeType === 9 || param.nodeType === 11);
-    },
-
-    // 绑定事件
-    "bind": function (dom, eventType, callback) {
-
-        if (dom.constructor === Array || dom.constructor === NodeList || dom.constructor === HTMLCollection) {
-            for (var i = 0; i < dom.length; i++) {
-                this.bind(dom[i], eventType, callback);
-            }
-            return;
-        }
-
-        if (window.attachEvent)
-            dom.attachEvent("on" + eventType, callback);
-        else
-            dom.addEventListener(eventType, callback, false);
-    },
-    // 去掉绑定事件
-    "unbind": function (dom, eventType, handler) {
-
-        if (dom.constructor === Array || dom.constructor === NodeList || dom.constructor === HTMLCollection) {
-            for (var i = 0; i < dom.length; i++) {
-                this.unbind(dom[i], eventType, handler);
-            }
-            return;
-        }
-
-        if (window.detachEvent)
-            dom.detachEvent('on' + eventType, handler);
-        else
-            dom.removeEventListener(eventType, handler, false);
-
-    },
-
-    // 在当前上下文context上查找结点
-    // selectFun可选，返回boolean用以判断当前面对的结点是否保留
-    "find": function (context, selectFun, tagName) {
-        if (!this.isNode(context)) return [];
-        var nodes = context.getElementsByTagName(tagName || '*');
-        var result = [];
-        for (var i = 0; i < nodes.length; i++) {
-            if (this.isNode(nodes[i]) && (typeof selectFun != "function" || selectFun(nodes[i])))
-                result.push(nodes[i]);
-        }
-        return result;
-    },
-
-    // 寻找当前结点的孩子结点
-    // selectFun可选，返回boolean用以判断当前面对的结点是否保留
-    "children": function (dom, selectFun) {
-        var nodes = dom.childNodes;
-        var result = [];
-        for (var i = 0; i < nodes.length; i++) {
-            if (this.isNode(nodes[i]) && (typeof selectFun != "function" || selectFun(nodes[i])))
-                result.push(nodes[i]);
-        }
-        return result;
-    },
-
-    // 判断结点是否有指定class
-    // clazzs可以是字符串或数组字符串
-    // notStrict可选，boolean值，默认false表示结点必须包含全部class,true表示至少包含一个即可
-    "hasClass": function (dom, clazzs, notStrict) {
-        if (clazzs.constructor !== Array) clazzs = [clazzs];
-
-        var class_str = " " + (dom.getAttribute('class') || "") + " ";
-        for (var i = 0; i < clazzs.length; i++) {
-            if (class_str.indexOf(" " + clazzs[i] + " ") >= 0) {
-                if (notStrict) return true;
-            } else {
-                if (!notStrict) return false;
-            }
-        }
-        return true;
-    },
-
-    // 删除指定class
-    "removeClass": function (dom, clazz) {
-        var oldClazz = " " + (dom.getAttribute('class') || "") + " ";
-        var newClazz = oldClazz.replace(" " + clazz.trim() + " ", " ");
-        dom.setAttribute('class', newClazz.trim());
-    },
-
-    // 添加指定class
-    "addClass": function (dom, clazz) {
-        if (this.hasClass(dom, clazz)) return;
-        var oldClazz = dom.getAttribute('class') || "";
-        dom.setAttribute('class', oldClazz + " " + clazz);
-    },
-
-    // 字符串变成结点
-    // isSvg可选，boolean值，默认false表示结点是html，为true表示svg类型
-    "toNode": function (template, isSvg) {
-        var frame;
-
-        // html和svg上下文不一样
-        if (isSvg) frame = document.createElementNS(namespace.svg, 'svg');
-        else {
-
-            var frameTagName = 'div';
-
-            // 大部分的标签可以直接使用div作为容器
-            // 部分特殊的需要特殊的容器标签
-
-            if (/^<tr[> ]/.test(template)) {
-
-                frameTagName = "tbody";
-
-            } else if (/^<th[> ]/.test(template) || /^<td[> ]/.test(template)) {
-
-                frameTagName = "tr";
-
-            } else if (/^<thead[> ]/.test(template) || /^<tbody[> ]/.test(template)) {
-
-                frameTagName = "table";
-
-            }
-
-            frame = document.createElement(frameTagName);
-        }
-
-        // 低版本浏览器svg没有innerHTML，考虑是vue框架中，没有补充
-        frame.innerHTML = template;
-
-        var childNodes = frame.childNodes;
-        for (var i = 0; i < childNodes.length; i++) {
-            if (this.isNode(childNodes[i])) return childNodes[i];
-        }
-    },
-
-    // 主动触发事件
-    "trigger": function (dom, eventType) {
-
-        //创建event的对象实例。
-        if (document.createEventObject) {
-            // IE浏览器支持fireEvent方法
-            dom.fireEvent('on' + eventType, document.createEventObject());
-        }
-
-        // 其他标准浏览器使用dispatchEvent方法
-        else {
-            var _event = document.createEvent('HTMLEvents');
-            // 3个参数：事件类型，是否冒泡，是否阻止浏览器的默认行为
-            _event.initEvent(eventType, true, false);
-            dom.dispatchEvent(_event);
-        }
-
-    },
-
-    // 获取样式
-    "getStyle": function (dom, name) {
-        // 获取结点的全部样式
-        var allStyle = document.defaultView && document.defaultView.getComputedStyle ?
-            document.defaultView.getComputedStyle(dom, null) :
-            dom.currentStyle;
-
-        // 如果没有指定属性名称，返回全部样式
-        return typeof name === 'string' ?
-            allStyle.getPropertyValue(name) :
-            allStyle;
-    },
-
-    // 获取元素位置
-    "offsetPosition": function (dom) {
-        var left = 0;
-        var top = 0;
-        top = dom.offsetTop;
-        left = dom.offsetLeft;
-        dom = dom.offsetParent;
-        while (dom) {
-            top += dom.offsetTop;
-            left += dom.offsetLeft;
-            dom = dom.offsetParent;
-        }
-        return {
-            "left": left,
-            "top": top
-        };
-    },
-
-    // 获取鼠标相对元素位置
-    "mousePosition": function (dom, event) {
-        var bounding = dom.getBoundingClientRect();
-        if (!event || !event.clientX)
-            throw new Error('Event is necessary!');
-        return {
-            "x": event.clientX - bounding.left,
-            "y": event.clientY - bounding.top
-        };
-    },
-
-    // 删除结点
-    "remove": function (dom) {
-        dom.parentNode.removeChild(dom);
-    },
-
-    // 设置多个样式
-    "setStyles": function (dom, styles) {
-        for (var key in styles)
-            dom.style[key] = styles[key];
-    },
-
-    // 获取元素大小
-    "size": function (dom, type) {
-        var elemHeight, elemWidth;
-        if (type == 'content') { //内容
-            elemWidth = dom.clientWidth - ((this.getStyle(dom, 'padding-left') + "").replace('px', '')) - ((this.getStyle(dom, 'padding-right') + "").replace('px', ''));
-            elemHeight = dom.clientHeight - ((this.getStyle(dom, 'padding-top') + "").replace('px', '')) - ((this.getStyle(dom, 'padding-bottom') + "").replace('px', ''));
-        } else if (type == 'padding') { //内容+内边距
-            elemWidth = dom.clientWidth;
-            elemHeight = dom.clientHeight;
-        } else if (type == 'border') { //内容+内边距+边框
-            elemWidth = dom.offsetWidth;
-            elemHeight = dom.offsetHeight;
-        } else if (type == 'scroll') { //滚动的宽（不包括border）
-            elemWidth = dom.scrollWidth;
-            elemHeight = dom.scrollHeight;
-        } else {
-            elemWidth = dom.offsetWidth;
-            elemHeight = dom.offsetHeight;
-        }
-        return {
-            width: elemWidth,
-            height: elemHeight
-        };
-    },
-
-    // 在被选元素内部的结尾插入内容
-    "append": function (el, template) {
-        var node = this.isNode(template) ? template : this.toNode(template);
-        el.appendChild(node);
-        return node;
-    },
-
-    // 在被选元素内部的开头插入内容
-    "prepend": function (el, template) {
-        var node = this.isNode(template) ? template : this.toNode(template);
-        el.insertBefore(node, el.childNodes[0]);
-        return node;
-    },
-
-    // 在被选元素之后插入内容
-    "after": function (el, template) {
-        var node = this.isNode(template) ? template : this.toNode(template);
-        el.parentNode.insertBefore(node, el.nextSibling);
-        return node;
-    },
-
-    // 在被选元素之前插入内容
-    "before": function (el, template) {
-        var node = this.isNode(template) ? template : this.toNode(template);
-        el.parentNode.insertBefore(node, el);
-        return node;
-    }
-
-};
-
-  
-    return __etcpack__scope_bundle__;
-}
-
-/*************************** [bundle] ****************************/
 // Original file:./src/directive/ui-goto-example.ts
 /*****************************************************************/
-window.__etcpack__bundleSrc__['42']=function(){
+window.__etcpack__bundleSrc__['41']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
     var _dec, _class2;
@@ -4226,10 +3911,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 __etcpack__scope_args__=window.__etcpack__getBundle('1');
 var Directive=__etcpack__scope_args__.Directive;
 
-__etcpack__scope_args__=window.__etcpack__getBundle('41');
+__etcpack__scope_args__=window.__etcpack__getBundle('37');
 var xhtml =__etcpack__scope_args__.default;
 
-__etcpack__scope_args__=window.__etcpack__getBundle('43');
+__etcpack__scope_args__=window.__etcpack__getBundle('42');
 var examples =__etcpack__scope_args__.default;
 
 
@@ -4274,24 +3959,24 @@ __etcpack__scope_bundle__.default=_class;
 /*************************** [bundle] ****************************/
 // Original file:./examples/lazy-load.js
 /*****************************************************************/
-window.__etcpack__bundleSrc__['43']=function(){
+window.__etcpack__bundleSrc__['42']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
     __etcpack__scope_bundle__.default= {
   "begin_painter": function begin_painter() {
-    return window.__etcpack__getLazyBundle('./build/main@v0.1.2-bundle5.js','44');
+    return window.__etcpack__getLazyBundle('./build/main@v0.1.2-bundle5.js','43');
   },
   "ring_line": function ring_line() {
-    return window.__etcpack__getLazyBundle('./build/main@v0.1.2-bundle6.js','45');
+    return window.__etcpack__getLazyBundle('./build/main@v0.1.2-bundle6.js','44');
   },
   "ring_single": function ring_single() {
-    return window.__etcpack__getLazyBundle('./build/main@v0.1.2-bundle7.js','46');
+    return window.__etcpack__getLazyBundle('./build/main@v0.1.2-bundle7.js','45');
   },
   "map_china": function map_china() {
-    return window.__etcpack__getLazyBundle('./build/main@v0.1.2-bundle8.js','47');
+    return window.__etcpack__getLazyBundle('./build/main@v0.1.2-bundle8.js','46');
   },
   "tree_simple": function tree_simple() {
-    return window.__etcpack__getLazyBundle('./build/main@v0.1.2-bundle9.js','48');
+    return window.__etcpack__getLazyBundle('./build/main@v0.1.2-bundle9.js','47');
   }
 };
   
@@ -4301,7 +3986,7 @@ window.__etcpack__bundleSrc__['43']=function(){
 /*************************** [bundle] ****************************/
 // Original file:./src/directive/ui-code.ts
 /*****************************************************************/
-window.__etcpack__bundleSrc__['49']=function(){
+window.__etcpack__bundleSrc__['48']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
     var _dec, _class2;
@@ -4312,10 +3997,10 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
-__etcpack__scope_args__=window.__etcpack__getBundle('41');
+__etcpack__scope_args__=window.__etcpack__getBundle('37');
 var xhtml =__etcpack__scope_args__.default;
 
-__etcpack__scope_args__=window.__etcpack__getBundle('50');
+__etcpack__scope_args__=window.__etcpack__getBundle('49');
 var OpenWebEditor =__etcpack__scope_args__.default;
 
 __etcpack__scope_args__=window.__etcpack__getBundle('1');
@@ -4414,7 +4099,7 @@ __etcpack__scope_bundle__.default=_class;
 /*************************** [bundle] ****************************/
 // Original file:./node_modules/open-web-editor/dist/open-web-editor.min.js
 /*****************************************************************/
-window.__etcpack__bundleSrc__['50']=function(){
+window.__etcpack__bundleSrc__['49']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
     
@@ -4450,7 +4135,7 @@ window.__etcpack__bundleSrc__['50']=function(){
 /*************************** [bundle] ****************************/
 // Original file:./src/style/menu.scss
 /*****************************************************************/
-window.__etcpack__bundleSrc__['51']=function(){
+window.__etcpack__bundleSrc__['50']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
     __etcpack__scope_bundle__.default= "\n div.menu-view{\n\nwhite-space: nowrap;\n\nuser-select: none;\n\n}\n\n div.menu-view>div{\n\noverflow: auto;\n\ndisplay: inline-block;\n\nvertical-align: top;\n\nwhite-space: normal;\n\n}\n\n div.menu-view>div:first-child{\n\nwidth: 2.8rem;\n\npadding: .2rem;\n\n}\n\n div.menu-view>div:first-child li{\n\npadding-left: 1em;\n\n}\n\n div.menu-view>div:first-child li[active]{\n\nbackground-repeat: no-repeat;\n\nbackground-position: -4px 6px;\n\nbackground-size: 20px auto;\n\n}\n\n div.menu-view>div:first-child li[active=\"yes\"]{\n\nbackground-image: url('./image/open.png');\n\n}\n\n div.menu-view>div:first-child li[active=\"no\"]{\n\nbackground-image: url('./image/close.png');\n\n}\n\n div.menu-view>div:first-child li[active=\"no\"]>ul{\n\ndisplay: none;\n\n}\n\n div.menu-view>div:first-child h2{\n\npadding: 10px 0;\n\nfont-size: .16rem;\n\n}\n\n div.menu-view>div:first-child h3{\n\nfont-weight: 400;\n\nfont-size: .14rem;\n\ncolor: #304455;\n\ncursor: pointer;\n\ndisplay: inline-block;\n\nmargin: .07rem 0;\n\nheight: 1.2em;\n\n}\n\n div.menu-view>div:first-child h3:hover{\n\nborder-bottom: 2px solid #2396b9;\n\n}\n"
@@ -4461,7 +4146,7 @@ window.__etcpack__bundleSrc__['51']=function(){
 /*************************** [bundle] ****************************/
 // Original file:./src/style/style.css
 /*****************************************************************/
-window.__etcpack__bundleSrc__['52']=function(){
+window.__etcpack__bundleSrc__['51']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
     __etcpack__scope_bundle__.default= "html {\n    font-size: 100px;\n    font-family: serif;\n}\n\nbody {\n    font-size: .16rem;\n}\n\n.warn {\n    color: rgb(199, 191, 191) !important;\n    font-size: 12px !important;\n    font-weight: 800 !important;\n}\n\n.doc-view>h4 {\n    color: #000000;\n    border-bottom: 1px solid gray;\n    padding: 2px 10px !important;\n    font-size: 13px !important;\n}\n"

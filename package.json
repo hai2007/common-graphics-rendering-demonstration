@@ -21,8 +21,10 @@
     "tslib": "^2.3.1"
   },
   "dependencies": {
+    "@hai2007/browser": "^0.3.5",
     "@hai2007/polyfill": "^0.2.0",
     "@hai2007/style": "^0.3.0",
+    "@hai2007/tool": "^1.2.0",
     "image2d": "^1.16.4",
     "nefbl": "^0.2.6",
     "sprout-ui": "^0.2.2"

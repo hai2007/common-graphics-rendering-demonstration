@@ -1,4 +1,4 @@
-import xhtml from '@hai2007/tool/xhtml'
+import xhtml from '@hai2007/browser/xhtml'
 import OpenWebEditor from 'open-web-editor'
 import { Directive } from 'nefbl'
 
