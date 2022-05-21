@@ -3185,16 +3185,16 @@ window.__etcpack__bundleSrc__['26']=function(){
     var __etcpack__scope_args__;
     __etcpack__scope_bundle__.default= {
   "begin": function begin() {
-    return window.__etcpack__getLazyBundle('./build/main@v0.1.2-bundle1.js','27');
+    return window.__etcpack__getLazyBundle('./build/main@v0.1.3-bundle1.js','27');
   },
   "ring": function ring() {
-    return window.__etcpack__getLazyBundle('./build/main@v0.1.2-bundle2.js','28');
+    return window.__etcpack__getLazyBundle('./build/main@v0.1.3-bundle2.js','28');
   },
   "map": function map() {
-    return window.__etcpack__getLazyBundle('./build/main@v0.1.2-bundle3.js','29');
+    return window.__etcpack__getLazyBundle('./build/main@v0.1.3-bundle3.js','29');
   },
   "tree": function tree() {
-    return window.__etcpack__getLazyBundle('./build/main@v0.1.2-bundle4.js','30');
+    return window.__etcpack__getLazyBundle('./build/main@v0.1.3-bundle4.js','30');
   }
 };
   
@@ -3298,7 +3298,7 @@ window.__etcpack__bundleSrc__['33']=function(){
 window.__etcpack__bundleSrc__['34']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
-    __etcpack__scope_bundle__.default= "<input placeholder=\"输入内容后回车查询\" ui-on:keydown='goSearch' ui-model='wd' />\r\n"
+    __etcpack__scope_bundle__.default= "<input placeholder=\"输入内容后回车查询\" ui-on:keydown='goSearch' ui-model='wd' />\n"
   
     return __etcpack__scope_bundle__;
 }
@@ -3964,19 +3964,19 @@ window.__etcpack__bundleSrc__['42']=function(){
     var __etcpack__scope_args__;
     __etcpack__scope_bundle__.default= {
   "begin_painter": function begin_painter() {
-    return window.__etcpack__getLazyBundle('./build/main@v0.1.2-bundle5.js','43');
+    return window.__etcpack__getLazyBundle('./build/main@v0.1.3-bundle5.js','43');
   },
   "ring_line": function ring_line() {
-    return window.__etcpack__getLazyBundle('./build/main@v0.1.2-bundle6.js','44');
+    return window.__etcpack__getLazyBundle('./build/main@v0.1.3-bundle6.js','44');
   },
   "ring_single": function ring_single() {
-    return window.__etcpack__getLazyBundle('./build/main@v0.1.2-bundle7.js','45');
+    return window.__etcpack__getLazyBundle('./build/main@v0.1.3-bundle7.js','45');
   },
   "map_china": function map_china() {
-    return window.__etcpack__getLazyBundle('./build/main@v0.1.2-bundle8.js','46');
+    return window.__etcpack__getLazyBundle('./build/main@v0.1.3-bundle8.js','46');
   },
   "tree_simple": function tree_simple() {
-    return window.__etcpack__getLazyBundle('./build/main@v0.1.2-bundle9.js','47');
+    return window.__etcpack__getLazyBundle('./build/main@v0.1.3-bundle9.js','47');
   }
 };
   

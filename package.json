@@ -1,6 +1,6 @@
 {
   "name": "common-graphics-rendering-demonstration",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "常见图形绘制演示，为了演示方便，借助image2d来辅助提供基础设施。不过，这几乎没有什么难度，对于从没有接触过的人而言，也可以很快上手。",
   "scripts": {
     "build": "nodejs -e build && etcpack_pkg --config etcpack.prod.js",
